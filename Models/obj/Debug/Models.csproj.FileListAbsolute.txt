@@ -1,0 +1,6 @@
+C:\Users\Mohamed\source\repos\BankManagmentSystem\Models\bin\Debug\Models.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\Models\bin\Debug\Models.pdb
+C:\Users\Mohamed\source\repos\BankManagmentSystem\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\Mohamed\source\repos\BankManagmentSystem\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\source\repos\BankManagmentSystem\Models\obj\Debug\Models.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\Models\obj\Debug\Models.pdb

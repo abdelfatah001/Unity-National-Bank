@@ -1,0 +1,6 @@
+C:\Users\Mohamed\source\repos\BankManagmentSystem\DAL-BankManagment\bin\Debug\DAL-BankManagment.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\DAL-BankManagment\bin\Debug\DAL-BankManagment.pdb
+C:\Users\Mohamed\source\repos\BankManagmentSystem\DAL-BankManagment\obj\Debug\DAL-BankManagment.csproj.AssemblyReference.cache
+C:\Users\Mohamed\source\repos\BankManagmentSystem\DAL-BankManagment\obj\Debug\DAL-BankManagment.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\source\repos\BankManagmentSystem\DAL-BankManagment\obj\Debug\DAL-BankManagment.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\DAL-BankManagment\obj\Debug\DAL-BankManagment.pdb

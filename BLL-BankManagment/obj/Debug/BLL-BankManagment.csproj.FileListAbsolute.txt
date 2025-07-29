@@ -1,0 +1,9 @@
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\BLL-BankManagment.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\BLL-BankManagment.pdb
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\DAL-BankManagment.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\DAL-BankManagment.pdb
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-BankManagment.csproj.AssemblyReference.cache
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-BankManagment.csproj.CoreCompileInputs.cache
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-Bank.5DF871F3.Up2Date
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-BankManagment.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-BankManagment.pdb

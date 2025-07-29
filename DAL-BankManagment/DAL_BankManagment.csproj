@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL_BankManagment</RootNamespace>
+    <AssemblyName>DAL-BankManagment</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\clsDeleteAccount.cs" />
+    <Compile Include="Accounts\clsGetAccount.cs" />
+    <Compile Include="Accounts\clsInsertAccount.cs" />
+    <Compile Include="Accounts\clsReadAccounts.cs" />
+    <Compile Include="Accounts\clsUpdateAccount.cs" />
+    <Compile Include="Clients\clsDeleteClient.cs" />
+    <Compile Include="Clients\clsGetClient.cs" />
+    <Compile Include="Clients\clsInsertClient.cs" />
+    <Compile Include="Clients\clsReadClients.cs" />
+    <Compile Include="Clients\clsUpdateClient.cs" />
+    <Compile Include="Countries\clsGetCountry.cs" />
+    <Compile Include="Countries\clsReadCountry.cs" />
+    <Compile Include="Currencies\clsGetCurrency.cs" />
+    <Compile Include="Currencies\clsReadCurrencys.cs" />
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Employees\clsDeleteEmployee.cs" />
+    <Compile Include="Employees\clsGetEmployee.cs" />
+    <Compile Include="Employees\clsInsertEmployee.cs" />
+    <Compile Include="Employees\clsReadEmployee.cs" />
+    <Compile Include="Employees\clsUpdateEmployee.cs" />
+    <Compile Include="Persons\clsDeletePerson.cs" />
+    <Compile Include="Persons\clsGetPerson.cs" />
+    <Compile Include="Persons\clsInsertPerson.cs" />
+    <Compile Include="Persons\clsUpdatePerson.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\clsDeleteUser.cs" />
+    <Compile Include="Users\clsGetUser.cs" />
+    <Compile Include="Users\clsInsertUser.cs" />
+    <Compile Include="Users\clsReadUsers.cs" />
+    <Compile Include="Users\clsUpdateUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{3cf2b27c-d2f6-444b-a134-39c195f08e50}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
