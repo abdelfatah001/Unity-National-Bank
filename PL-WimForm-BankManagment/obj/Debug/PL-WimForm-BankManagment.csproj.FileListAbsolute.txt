@@ -1,4 +1,0 @@
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL-WimForm-BankManagment\obj\Debug\PL-WimForm-BankManagment.csproj.AssemblyReference.cache
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL-WimForm-BankManagment\obj\Debug\PL_WimForm_BankManagment.Properties.Resources.resources
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL-WimForm-BankManagment\obj\Debug\PL-WimForm-BankManagment.csproj.GenerateResource.cache
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL-WimForm-BankManagment\obj\Debug\PL-WimForm-BankManagment.csproj.CoreCompileInputs.cache

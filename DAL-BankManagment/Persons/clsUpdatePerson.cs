@@ -21,7 +21,6 @@ namespace DAL_BankManagment.Persons
                     Set
                         FirstName = @FirstName,
                         LastName = @LastName,
-                        DateOfBirth = @DateOfBirth,
                         Email = @Email,
                         Phone = @Phone,
                         CountryID = @CountryID
@@ -32,7 +31,6 @@ namespace DAL_BankManagment.Persons
 
             cmd.Parameters.AddWithValue("@FirstName", person.FirstName);
             cmd.Parameters.AddWithValue("@LastName", person.LastName);
-            cmd.Parameters.AddWithValue("@DateOfBirth", person.DateOfBirth);
             cmd.Parameters.AddWithValue("@Email", person.Email);
             cmd.Parameters.AddWithValue("@Phone", person.Phone);
             cmd.Parameters.AddWithValue("@CountryID", person.Country.Id);
@@ -47,6 +45,7 @@ namespace DAL_BankManagment.Persons
             }
             catch (Exception ex)
             {
+                throw new Exception("Failed to update person : " + ex.Message);
 
             }
             finally { connection.Close(); }
@@ -55,7 +54,7 @@ namespace DAL_BankManagment.Persons
 
 
 
-            return (AffectedRows > 0);
+            return AffectedRows > 0;
         }
 
 

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>UNBImage-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,11 +67,41 @@
     <Compile Include="Currencies Screen\frmCurrencies.Designer.cs">
       <DependentUpon>frmCurrencies.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employees Screen\frmEmployees.cs">
+    <Compile Include="Employees Screen\Employee Details\frmEmployeeDetailsSaver.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employees Screen\frmEmployees.Designer.cs">
+    <Compile Include="Employees Screen\Employee Details\frmEmployeesDetailsLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Details\frmEmployeesDetailsShowManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Main Form\frmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Main Form\frmEmployees.Designer.cs">
       <DependentUpon>frmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Main Form\frmEmployees.Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Main Form\frmEmployees.Helpers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Details\frmEmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Details\frmEmployeeDetails.Designer.cs">
+      <DependentUpon>frmEmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Details\frmEmployeeDetails.Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Details\frmEmployeeDetails.Helpers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees Screen\Employee Main Form\frmEmployeesLoader.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home Screens\frmHome.cs">
       <SubType>Form</SubType>
@@ -88,16 +121,34 @@
     <Compile Include="Login Screen\frmLogin.Events.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users Screen\frmUserDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Users Screen\frmUserDetails.Designer.cs">
-      <DependentUpon>frmUserDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Users Screen\Add User\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Screen\Add User\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users Screen\User Details\frmUserDetailsSaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Screen\User Details\frmUserDetailsLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Screen\User Details\frmUserDetailsOpenEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Screen\User Main Form\frmUsers.Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Screen\User Details\frmUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Screen\User Details\frmUserDetails.Designer.cs">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Registeration Screen\frmRegisterations.cs">
       <SubType>Form</SubType>
@@ -111,19 +162,19 @@
     <Compile Include="Transaction Screen\frmTransactions.Designer.cs">
       <DependentUpon>frmTransactions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users Screen\frmUser.Helpers.cs">
+    <Compile Include="Users Screen\User Main Form\frmUsers.Helpers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users Screen\frmUserDetails.Events.cs">
+    <Compile Include="Users Screen\User Details\frmUserDetails.Events.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users Screen\frmUserDetails.Helpers.cs">
+    <Compile Include="Users Screen\User Details\frmUserDetails.Helpers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users Screen\frmUsers.cs">
+    <Compile Include="Users Screen\User Main Form\frmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users Screen\frmUsers.Designer.cs">
+    <Compile Include="Users Screen\User Main Form\frmUsers.Designer.cs">
       <DependentUpon>frmUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="Main Screen\clsListItemTag.cs" />
@@ -141,6 +192,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users Screen\User Main Form\frmUsersLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Accounts Screen\frmAccounts.resx">
       <DependentUpon>frmAccounts.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,8 +204,11 @@
     <EmbeddedResource Include="Currencies Screen\frmCurrencies.resx">
       <DependentUpon>frmCurrencies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employees Screen\frmEmployees.resx">
+    <EmbeddedResource Include="Employees Screen\Employee Main Form\frmEmployees.resx">
       <DependentUpon>frmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees Screen\Employee Details\frmEmployeeDetails.resx">
+      <DependentUpon>frmEmployeeDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home Screens\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -159,7 +216,10 @@
     <EmbeddedResource Include="Login Screen\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users Screen\frmUserDetails.resx">
+    <EmbeddedResource Include="Users Screen\Add User\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users Screen\User Details\frmUserDetails.resx">
       <DependentUpon>frmUserDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registeration Screen\frmRegisterations.resx">
@@ -176,7 +236,7 @@
     <EmbeddedResource Include="Transaction Screen\frmTransactions.resx">
       <DependentUpon>frmTransactions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users Screen\frmUsers.resx">
+    <EmbeddedResource Include="Users Screen\User Main Form\frmUsers.resx">
       <DependentUpon>frmUsers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -219,6 +279,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UNBstreched.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UNBImage-removebg-preview.ico" />
+    <Content Include="UNBwithoutbg.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

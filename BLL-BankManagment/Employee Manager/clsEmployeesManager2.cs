@@ -1,8 +1,10 @@
 ﻿using DAL_BankManagment.Clients;
 using DAL_BankManagment.Employees;
+using DAL_BankManagment.Persons;
 using Models;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,7 +52,14 @@ namespace Manager
         {
             bool result = false;
 
-            result = clsUpdateEmployee.UpdateEmployee(employee);
+            try
+            {
+                result = clsUpdateEmployee.UpdateEmployee(employee);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
 
             if (result)
             {
@@ -59,11 +68,32 @@ namespace Manager
             return result;
         }
 
+        public static bool UpdatePerson (clsPerson person)
+        {
+            try
+            {
+               return clsUpdatePerson.UpdatePerson(person);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
 
         public static List<clsEmployee> GetEmployee(string Name)
         {
             return GetEmployeeFromList(Name);
         }
+
+        public static clsEmployee GetManager(short Id)
+        {
+            int index = GetEmployeeIndexFromList(Id);
+
+            return clsEmployeesManager.Employees[index];
+        }
+
 
 
     }

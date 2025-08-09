@@ -10,14 +10,12 @@ namespace Models
     {
         public short Id { get; set; }
         public string Name { get; set; }
-        public clsCurrency Currency { get; set; }
 
         public clsCountry() { }
-        public clsCountry(short Id, string Name, clsCurrency Currency)
+        public clsCountry(short Id, string Name)
         {
             this.Id = Id;
             this.Name = Name;
-            this.Currency = Currency;
         }
 
 

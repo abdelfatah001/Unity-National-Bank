@@ -44,13 +44,20 @@ namespace DAL_BankManagment.Persons
                     if (reader["Phone"] != DBNull.Value)
                         person.Phone = reader["Phone"].ToString();
                     else
-                        person.Phone = "";
+                        person.Phone = "null";
 
                     person.Age =
                         (byte)((DateTime.Now.Year) - (Convert.ToDateTime(reader["DateOfBirth"]).Year));
 
                     person.DateOfBirth = Convert.ToDateTime(reader["DateOfBirth"]);
-                    person.Country = clsGetCountry.GetCountry(Convert.ToInt16(reader["CountryID"]));
+                    try
+                    {
+                        person.Country = clsGetCountry.GetCountry(Convert.ToInt16(reader["CountryID"]));
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
                 }
                 else
                     person = null;

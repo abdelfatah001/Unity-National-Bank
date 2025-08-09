@@ -12,10 +12,8 @@ C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\D
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmAccounts.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmClients.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmCurrencies.resources
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmEmployees.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmRegisterations.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmTransactions.resources
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmUsers.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmLogin.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\bin\Debug\BLL-BankManagment.dll
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\bin\Debug\Models.dll
@@ -24,5 +22,8 @@ C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\bin\D
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\bin\Debug\Models.pdb
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\bin\Debug\DAL-BankManagment.pdb
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinFo.07308727.Up2Date
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.frmUserDetails.resources
-C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.exe.config
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.Employees_Screen.frmEmployeeDetails.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.Employees_Screen.frmEmployees.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.Users_Screen.frmAddUser.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.Users_Screen.frmUserDetails.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm_BankManagment\obj\Debug\PL_WinForm_BankManagment.Users_Screen.frmUsers.resources

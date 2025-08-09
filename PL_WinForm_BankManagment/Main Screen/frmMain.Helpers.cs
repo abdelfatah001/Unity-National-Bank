@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PL_WinForm_BankManagment.Employees_Screen;
+using PL_WinForm_BankManagment.Users_Screen;
 
 namespace PL_WinForm_BankManagment.Main_Screen
 {
@@ -90,7 +92,7 @@ namespace PL_WinForm_BankManagment.Main_Screen
 
         private void CloseForm(Panel OpenedPanel)
         {
-            pnlMainScreen.Controls.Clear();
+            
 
             clsListItemTag PanelTag = (clsListItemTag)OpenedPanel.Tag;
             PanelTag.IsClicked = false;
@@ -114,28 +116,82 @@ namespace PL_WinForm_BankManagment.Main_Screen
         private void OpenScreen (Panel pnl)
         {
             if (pnl == pnlHome)
-                ShowScreen(new frmHome());
+            {
+                if (FormHome == null)
+                {
+                    FormHome = new frmHome();
+                }
+                ShowScreen(FormHome);
 
+
+            }
             else if (pnl == pnlAccounts)
-                ShowScreen(new frmAccounts());
+            {
+                if (FormAccounts == null)
+                {
+                    FormAccounts = new frmAccounts();
+                }
+                ShowScreen(FormAccounts);
+            }
 
             else if (pnl == pnlUsers)
-                ShowScreen(new frmUsers());
+            {
+                if (FormUsers == null)
+                {
+                    FormUsers = new frmUsers();
+                }
+                ShowScreen(FormUsers);
+            }
 
             else if (pnl == pnlClients)
-                ShowScreen(new frmClients());
+            {
+                if (FormClients == null)
+                {
+                    FormClients = new frmClients();
+                }
+                ShowScreen(FormClients);
+
+            }
 
             else if (pnl == pnlTransactions)
-                ShowScreen(new frmTransactions());
+            {
+                if (FormTransactions == null)
+                {
+                    FormTransactions = new frmTransactions();
+                }
+                ShowScreen(FormTransactions);
+
+            }
 
             else if (pnl == pnlRegisterations)
-                ShowScreen(new frmRegisterations());
+            {
+                if (FormRegisterations == null)
+                {
+                    FormRegisterations = new frmRegisterations();
+                }
+                ShowScreen(FormRegisterations);
+            }
 
             else if (pnl == pnlCurrencies)
-                ShowScreen(new frmCurrencies());
+            {
+                if (FormCurrencies == null)
+                {
+                    FormCurrencies = new frmAccounts();
+                }
+                ShowScreen(FormCurrencies);
 
-            else
-                ShowScreen(new frmEmployees());
+            }
+
+            else if (pnl == pnlEmployees)
+            {
+                if (FormEmployees == null)
+                {
+                    FormEmployees = new frmEmployees();
+                    ShowScreen(FormEmployees);
+                }
+                ShowScreen(FormEmployees);
+            }
+
         }
 
         private void OpenForm(Panel pnl)

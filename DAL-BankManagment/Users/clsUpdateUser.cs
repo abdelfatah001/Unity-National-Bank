@@ -40,7 +40,11 @@ namespace DAL_BankManagment.Users
 
                 AffectedRows = cmd.ExecuteNonQuery();
             }
-            catch (Exception ex) { }
+            catch (Exception ex) 
+            { 
+                throw new Exception("Error in update user : " + ex.Message);    
+            }
+
             finally { connection.Close(); }
 
             return AffectedRows > 0;

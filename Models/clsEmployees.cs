@@ -33,6 +33,10 @@ namespace Models
             this.Manager = Maneger;
         }
 
+        public string strEmployee()
+        {
+            return (this.Id + " - " + this.Person.FirstName + this.Person.LastName);
+        }
 
 
     }

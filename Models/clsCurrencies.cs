@@ -14,14 +14,16 @@ namespace Models
         public string Name { get; set; }
         public double ExchangeRate { get; set; }
 
+        public clsCountry country { get; set; }
         public clsCurrency() { }
 
-        public clsCurrency(short Id, string Code, string Name, double ExchangeRate)
+        public clsCurrency(short Id, string Code, string Name, double ExchangeRate, clsCountry country)
         {
             this.Id = Id;
             this.Code = Code;
             this.Name = Name;
             this.ExchangeRate = ExchangeRate;
+            this.country = country;
         }
 
 

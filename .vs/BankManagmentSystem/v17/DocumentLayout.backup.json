@@ -3,72 +3,228 @@
   "WorkspaceRootPath": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuserdetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuserdetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsopenemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsopenemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsopenemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailsopenemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\main screen\\frmmain.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\frmmain.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailssaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailssaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\main screen\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailssaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetailssaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\bll-bankmanagment\\users manager\\clsusersmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\employee manager\\clsemployeesmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\employee manager\\clsemployeesmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\employee manager\\clsemployeesmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\employee manager\\clsemployeesmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\users manager\\clsusersmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\users manager\\clsusersmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuserdetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuserdetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\countries\\clsgetcountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\countries\\clsgetcountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\employees\\clsgetemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\employees\\clsgetemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\models\\clsemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|solutionrelative:models\\clsemployees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\employees\\clsupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\employees\\clsupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\accounts manager\\clsaccountsmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\accounts manager\\clsaccountsmanager2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\accounts manager\\clsaccountsmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\accounts manager\\clsaccountsmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\main screen\\frmmain.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\frmmain.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee main form\\frmemployees.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\main screen\\frmmain.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\frmmain.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\main screen\\main.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\main.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\main screen\\main.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\main.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\employees screen\\employee details\\frmemployeedetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\users\\clsupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\users\\clsupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\persons\\clsinsertperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\persons\\clsinsertperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\persons\\clsupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\persons\\clsupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\persons\\clsgetperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\persons\\clsgetperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\clscountriesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\clscountriesmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\add user\\frmadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\add user\\frmadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user main form\\frmusers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user main form\\frmusers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\add user\\frmadduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\add user\\frmadduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\user details\\frmuserdetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\add user\\frmadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\add user\\frmadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\main screen\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\main screen\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\models\\clscountries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|solutionrelative:models\\clscountries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\countries\\clsgetcountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\countries\\clsgetcountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\users\\clsreadusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\users\\clsreadusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmuser.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmuser.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\employees\\clsreademployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\employees\\clsreademployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\bll-bankmanagment\\users manager\\clsusersmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB918FD0-9871-4661-B1A3-82623B2C22F9}|BLL-BankManagment\\BLL_BankManagment.csproj|solutionrelative:bll-bankmanagment\\users manager\\clsusersmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}|PL_WinForm_BankManagment\\PL_WinForm_BankManagment.csproj|solutionrelative:pl_winform_bankmanagment\\users screen\\frmusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Entities\\clsClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,18 +233,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLL-BankManagment\\clsUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\persons\\clsupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\persons\\clsupdateperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\models\\clscurrencies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|solutionrelative:models\\clscurrencies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\models\\clscountries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CF2B27C-D2F6-444B-A134-39C195F08E50}|Models\\Models.csproj|solutionrelative:models\\clscountries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\users\\clsinsertuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,16 +247,8 @@
       "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\users\\clsdeleteuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\persons\\clsinsertperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\persons\\clsinsertperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\persons\\clsdeleteperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\persons\\clsdeleteperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\employees\\clsupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|solutionrelative:dal-bankmanagment\\employees\\clsupdateemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1A4FC89-B59F-4C6B-B2C7-A20BEA90F67B}|DAL-BankManagment\\DAL_BankManagment.csproj|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\dal-bankmanagment\\employees\\clsinsertemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,6 +285,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BLL-BankManagment\\clsClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\frmemployees.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pl_winform_bankmanagment\\employees screen\\frmemployees.helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\mohamed\\source\\repos\\bankmanagmentsystem\\pl_winform_bankmanagment\\employees screen\\frmemployees.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pl_winform_bankmanagment\\employees screen\\frmemployees.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUsers.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PL_WinForm_BankManagment\\Users Screen\\frmUsers.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\pl_winform_bankmanagment\\users screen\\userdetails\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pl_winform_bankmanagment\\users screen\\userdetails\\frmuserdetails.events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,327 +322,494 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmUserDetails.Helpers.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Helpers.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Helpers.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Helpers.cs",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Helpers.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T16:03:29.57Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "frmUserDetails.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs [Design]",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T15:33:47.539Z",
+              "WhenOpened": "2025-08-09T16:39:55.535Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmUserDetails.Events.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Title": "frmUserDetailsOpenEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:21:30.733Z",
+              "WhenOpened": "2025-08-09T16:22:08.87Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmUserDetails.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "frmUserDetails.Events.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs*",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T15:37:14.936Z",
+              "WhenOpened": "2025-08-01T12:27:32.112Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmMain.Helpers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs [Design]",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "frmUserDetailsLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T17:06:00.04Z",
+              "WhenOpened": "2025-08-09T16:57:12.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmUserDetailsLoader.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsLoader.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:57:54.066Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmUserDetailsOpenEmployee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsOpenEmployee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:22:07.317Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmUserDetailsSaver.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:58:46.05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.cs [Design]",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\frmMain.cs [Design]",
+              "Title": "frmUserDetailsSaver.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetailsSaver.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T17:05:51.727Z",
+              "WhenOpened": "2025-08-09T16:58:44.972Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
+              "Title": "frmUserDetails.Events.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs [Design]*",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Events.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:39:05.252Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmUserDetails.Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:49:14.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmUserDetails.Helpers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Helpers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:17:17.445Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmUserDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:16:57.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmEmployeeDetails.Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAjwF0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:54:26.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmEmployeeDetails.Helpers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Helpers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:56:20.42Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "frmEmployeeDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:28:43.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmEmployeeDetails.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T16:54:18.905Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "clsEmployeesManager2.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Employee Manager\\clsEmployeesManager2.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\Employee Manager\\clsEmployeesManager2.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Employee Manager\\clsEmployeesManager2.cs",
+              "RelativeToolTip": "BLL-BankManagment\\Employee Manager\\clsEmployeesManager2.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwFkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T16:57:22.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "clsEmployeesManager1.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Employee Manager\\clsEmployeesManager1.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\Employee Manager\\clsEmployeesManager1.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Employee Manager\\clsEmployeesManager1.cs",
+              "RelativeToolTip": "BLL-BankManagment\\Employee Manager\\clsEmployeesManager1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:09:26.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "frmUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:16:16.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "clsUsersManager2.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Users Manager\\clsUsersManager2.cs",
               "RelativeDocumentMoniker": "BLL-BankManagment\\Users Manager\\clsUsersManager2.cs",
               "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Users Manager\\clsUsersManager2.cs",
               "RelativeToolTip": "BLL-BankManagment\\Users Manager\\clsUsersManager2.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T16:39:41.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmUserDetails.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAkwKwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "frmUsers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T16:20:50.805Z",
+              "WhenOpened": "2025-08-09T16:47:14.637Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmEmployeeDetails.Events.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Events.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Events.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T15:24:42.451Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmEmployees.Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T15:36:30.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "clsGetEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsGetEmployee.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Employees\\clsGetEmployee.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsGetEmployee.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Employees\\clsGetEmployee.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAQwF8AAAAhAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAjwEMAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:55:04.359Z"
+              "WhenOpened": "2025-08-05T16:15:41.385Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
+              "Title": "frmEmployees.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T16:07:18.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "clsEmployees.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsEmployees.cs",
+              "RelativeDocumentMoniker": "Models\\clsEmployees.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsEmployees.cs",
+              "RelativeToolTip": "Models\\clsEmployees.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:36:10.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmEmployees.Helpers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Helpers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T16:13:33.6Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "clsUpdateEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCkAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:31:28.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "clsAccountsManager2.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Accounts Manager\\clsAccountsManager2.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\Accounts Manager\\clsAccountsManager2.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Accounts Manager\\clsAccountsManager2.cs",
+              "RelativeToolTip": "BLL-BankManagment\\Accounts Manager\\clsAccountsManager2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T16:57:05.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "clsAccountsManager1.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Accounts Manager\\clsAccountsManager1.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\Accounts Manager\\clsAccountsManager1.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Accounts Manager\\clsAccountsManager1.cs",
+              "RelativeToolTip": "BLL-BankManagment\\Accounts Manager\\clsAccountsManager1.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T16:51:55.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "frmMain.Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAMwLwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:26:26.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "frmEmployees.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Main Form\\frmEmployees.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T16:06:30.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "frmMain.Helpers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\frmMain.Helpers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:06:00.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Main.Events.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T16:20:08.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Main.Events.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\Main.Events.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T16:20:09.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "frmEmployeeDetails.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\Employee Details\\frmEmployeeDetails.Designer.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAowO0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T16:17:30.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Properties\\Resources.resx",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-08-05T16:15:25.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "clsUpdateUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsUpdateUser.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsUpdateUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsUpdateUser.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Users\\clsUpdateUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T20:51:53.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "clsGetPerson.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsGetPerson.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Persons\\clsGetPerson.cs",
               "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsGetPerson.cs",
               "RelativeToolTip": "DAL-BankManagment\\Persons\\clsGetPerson.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T15:55:59.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmUserDetails.Events.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs [Design]",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Events.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T16:20:02.68Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "clsReadUsers.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsReadUsers.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsReadUsers.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsReadUsers.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Users\\clsReadUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAiwCkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:54:50.238Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmUser.Helpers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUser.Helpers.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUser.Helpers.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUser.Helpers.cs [Design]",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUser.Helpers.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:51:46.711Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "clsReadEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsReadEmployee.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Employees\\clsReadEmployee.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsReadEmployee.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Employees\\clsReadEmployee.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwDwAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:56:37.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "clsUsersManager1.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
-              "RelativeDocumentMoniker": "BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
-              "RelativeToolTip": "BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:47:01.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmUsers.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUsers.cs",
-              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUsers.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUsers.cs",
-              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUsers.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwB8AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T17:03:50.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "clsClient.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Entities\\clsClient.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Entities\\clsClient.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Entities\\clsClient.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Entities\\clsClient.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T18:36:13.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "clsUser.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsUser.cs",
-              "RelativeDocumentMoniker": "BLL-BankManagment\\clsUser.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsUser.cs",
-              "RelativeToolTip": "BLL-BankManagment\\clsUser.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:25:31.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "clsCountry.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsCountry.cs",
-              "RelativeDocumentMoniker": "BLL-BankManagment\\clsCountry.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsCountry.cs",
-              "RelativeToolTip": "BLL-BankManagment\\clsCountry.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:25:09.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "clsClient.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsClient.cs",
-              "RelativeDocumentMoniker": "BLL-BankManagment\\clsClient.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsClient.cs",
-              "RelativeToolTip": "BLL-BankManagment\\clsClient.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:24:58.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "clsUpdatePerson.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T08:50:52.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "clsCurrencies.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsCurrencies.cs",
-              "RelativeDocumentMoniker": "Models\\clsCurrencies.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsCurrencies.cs",
-              "RelativeToolTip": "Models\\clsCurrencies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T07:13:18.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "clsCountries.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsCountries.cs",
-              "RelativeDocumentMoniker": "Models\\clsCountries.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsCountries.cs",
-              "RelativeToolTip": "Models\\clsCountries.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T07:12:46.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "clsInsertUser.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsInsertUser.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsInsertUser.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsInsertUser.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Users\\clsInsertUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:45:36.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "clsGetUser.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsGetUser.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsGetUser.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsGetUser.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Users\\clsGetUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:46:43.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "clsDeleteUser.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsDeleteUser.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsDeleteUser.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsDeleteUser.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Users\\clsDeleteUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:46:09.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 38,
               "Title": "clsInsertPerson.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsInsertPerson.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Persons\\clsInsertPerson.cs",
@@ -490,7 +821,357 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 39,
+              "Title": "clsUpdatePerson.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Persons\\clsUpdatePerson.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:50:52.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "frmUsers.Events.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:30:23.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "frmUsers.Events.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Events.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T15:39:49.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "frmUsers.Helpers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T15:41:09.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "frmUsers.Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Helpers.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAuwEUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:29:34.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "clsCountriesManager.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsCountriesManager.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\clsCountriesManager.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsCountriesManager.cs",
+              "RelativeToolTip": "BLL-BankManagment\\clsCountriesManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T11:42:37.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "frmAddUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:27:11.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "frmUsers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Main Form\\frmUsers.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:31:13.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "frmAddUser.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.Designer.cs",
+              "ViewState": "AgIAAJwBAAAAAAAAAAAlwLYBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:29:28.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "frmUserDetails.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\User Details\\frmUserDetails.Designer.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAlwCgBAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:28:02.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "frmAddUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\Add User\\frmAddUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T12:27:09.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Main Screen\\frmMain.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Main Screen\\frmMain.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Main Screen\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:05:51.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "frmEmployees.Helpers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:32:51.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "frmEmployees.Helpers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Helpers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:34:13.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "frmEmployees.Events.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:33:49.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "frmEmployees.Events.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Employees Screen\\frmEmployees.Events.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T08:33:21.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "clsGetCountry.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Countries\\clsGetCountry.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Countries\\clsGetCountry.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Countries\\clsGetCountry.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Countries\\clsGetCountry.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T07:29:13.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "clsCountries.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsCountries.cs",
+              "RelativeDocumentMoniker": "Models\\clsCountries.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\Models\\clsCountries.cs",
+              "RelativeToolTip": "Models\\clsCountries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T07:12:46.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "frmUsers.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUsers.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUsers.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUsers.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUsers.Designer.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwHQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T06:07:09.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "frmUserDetails.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\frmUserDetails.Designer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwBwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T16:20:50.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "frmUserDetails.Events.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\UserDetails\\frmUserDetails.Events.cs",
+              "RelativeDocumentMoniker": "PL_WinForm_BankManagment\\Users Screen\\UserDetails\\frmUserDetails.Events.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\PL_WinForm_BankManagment\\Users Screen\\UserDetails\\frmUserDetails.Events.cs [Design]",
+              "RelativeToolTip": "PL_WinForm_BankManagment\\Users Screen\\UserDetails\\frmUserDetails.Events.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T16:20:02.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "clsReadUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsReadUsers.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsReadUsers.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsReadUsers.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Users\\clsReadUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwCkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T15:54:50.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "clsUsersManager1.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
+              "RelativeToolTip": "BLL-BankManagment\\Users Manager\\clsUsersManager1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T15:47:01.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "clsClient.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Entities\\clsClient.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Entities\\clsClient.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Entities\\clsClient.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Entities\\clsClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:36:13.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "clsUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsUser.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\clsUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsUser.cs",
+              "RelativeToolTip": "BLL-BankManagment\\clsUser.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T18:25:31.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "clsCountry.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsCountry.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\clsCountry.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsCountry.cs",
+              "RelativeToolTip": "BLL-BankManagment\\clsCountry.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T18:25:09.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "clsClient.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsClient.cs",
+              "RelativeDocumentMoniker": "BLL-BankManagment\\clsClient.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\BLL-BankManagment\\clsClient.cs",
+              "RelativeToolTip": "BLL-BankManagment\\clsClient.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T18:24:58.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "clsInsertUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsInsertUser.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsInsertUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsInsertUser.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Users\\clsInsertUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:45:36.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "clsGetUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsGetUser.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsGetUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsGetUser.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Users\\clsGetUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:46:43.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "clsDeleteUser.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsDeleteUser.cs",
+              "RelativeDocumentMoniker": "DAL-BankManagment\\Users\\clsDeleteUser.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Users\\clsDeleteUser.cs",
+              "RelativeToolTip": "DAL-BankManagment\\Users\\clsDeleteUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T18:46:09.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
               "Title": "clsDeletePerson.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Persons\\clsDeletePerson.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Persons\\clsDeletePerson.cs",
@@ -502,19 +1183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "clsUpdateEmployee.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Employees\\clsUpdateEmployee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T18:31:28.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 62,
               "Title": "clsInsertEmployee.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsInsertEmployee.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Employees\\clsInsertEmployee.cs",
@@ -526,7 +1195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 63,
               "Title": "clsDeleteEmployee.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Employees\\clsDeleteEmployee.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Employees\\clsDeleteEmployee.cs",
@@ -538,7 +1207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 64,
               "Title": "clsReadCurrencys.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Currencies\\clsReadCurrencys.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Currencies\\clsReadCurrencys.cs",
@@ -550,7 +1219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 65,
               "Title": "clsGetCurrency.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Currencies\\clsGetCurrency.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Currencies\\clsGetCurrency.cs",
@@ -562,7 +1231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 66,
               "Title": "clsReadCountry.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Countries\\clsReadCountry.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Countries\\clsReadCountry.cs",
@@ -574,19 +1243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "clsGetCountry.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Countries\\clsGetCountry.cs",
-              "RelativeDocumentMoniker": "DAL-BankManagment\\Countries\\clsGetCountry.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Countries\\clsGetCountry.cs",
-              "RelativeToolTip": "DAL-BankManagment\\Countries\\clsGetCountry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T07:29:13.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 67,
               "Title": "clsReadClients.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Clients\\clsReadClients.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Clients\\clsReadClients.cs",
@@ -598,7 +1255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 68,
               "Title": "clsInsertClient.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\BankManagmentSystem\\DAL-BankManagment\\Clients\\clsInsertClient.cs",
               "RelativeDocumentMoniker": "DAL-BankManagment\\Clients\\clsInsertClient.cs",

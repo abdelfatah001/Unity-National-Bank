@@ -14,7 +14,7 @@ namespace DAL_BankManagment.Employees
     {
 
         private static List<clsEmployee> SetEmployees()
-        {
+        { // this function fill List with all employees data except each employee manager set it null
             List<clsEmployee> employees = new List<clsEmployee>();
 
            SqlConnection connection = new SqlConnection(DBConnection._connectionString);
@@ -32,14 +32,28 @@ namespace DAL_BankManagment.Employees
                 while (reader.Read())
                 {
                     clsEmployee employee = new clsEmployee();
+
+                    employee.Id = short.Parse(reader["EmployeeID"].ToString());
                     employee.Salary = Convert.ToDouble(reader["Salary"]);
-                    employee.Person = clsGetPerson.GetPerson(Convert.ToInt16(reader["PersonID"]));
+                    try
+                    {
+                        employee.Person = clsGetPerson.GetPerson(Convert.ToInt16(reader["PersonID"]));
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);    
+                    }
 
                     byte DepartmentID = Convert.ToByte(reader["DepartmentID"]);
                     employee.Department = (clsEmployee.enDepartments)DepartmentID;
+                    
+                    if (reader["ManagerId"] != DBNull.Value)
+                       employee.ManagerId = Convert.ToInt16(reader["ManagerID"]);
 
-                    employee.ManagerId = Convert.ToInt16(reader["ManagerID"]);
+                    else
+                        employee.ManagerId = -1;
 
+                    employee.Manager = null;
                     employees.Add(employee);
                 }
 
@@ -47,18 +61,42 @@ namespace DAL_BankManagment.Employees
             }
             catch (Exception exec)
             {
+                throw new Exception("Failed to load employees " + exec.Message);
             }
             finally { connection.Close(); }
 
             return employees;
         }
 
-        private static void SetEmployeesManagers(List<clsEmployee> employees)
+        public static clsEmployee GetManager (short Id, List<clsEmployee> employees)
         {
-            foreach (var employee in employees)
+            foreach (clsEmployee employee in employees)
             {
-                if (employee.ManagerId != 0) 
-                    employee.Manager = clsGetEmployee.GetEmployee(employee.ManagerId, employees);
+                if (Id == employee.Id)
+                    return employee; 
+            }
+
+            return null;
+        }
+
+        private static void SetEmployeesManagers(List<clsEmployee> employees)
+        { // after filling the list with employees and make their manager is null
+            // this function set employee manager foreach index in this list
+            foreach (clsEmployee employee in employees)
+            {
+                // if this employee has manager and this manager is not assigned = null get it 
+                if (employee.ManagerId != -1 && employee.Manager == null)
+                {
+                    try
+                    {
+                        employee.Manager = GetManager(employee.ManagerId, employees);
+                    }
+                    catch (Exception ex) 
+                    { 
+                        throw new Exception(ex.Message); 
+                    }
+                
+                }
             }
         }
 

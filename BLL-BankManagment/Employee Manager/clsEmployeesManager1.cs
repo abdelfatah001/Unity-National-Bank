@@ -14,7 +14,7 @@ namespace Manager
     public partial class clsEmployeesManager
     {
 
-        private static List<clsEmployee> Employees;
+        public static List<clsEmployee> Employees = new List<clsEmployee>();
 
 
         private static void AddEmployeeToList(clsEmployee employee)
@@ -74,7 +74,7 @@ namespace Manager
         }
 
 
-
+  
 
 
     }

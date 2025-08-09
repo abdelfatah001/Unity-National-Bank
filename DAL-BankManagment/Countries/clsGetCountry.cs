@@ -34,13 +34,13 @@ namespace DAL_BankManagment.Countries
                 {
                     country.Id = Id;
                     country.Name = reader["CountryName"].ToString();
-                    country.Currency = Currencies.clsGetCurrency.GetCurrency(Convert.ToInt16(reader["CurrencyID"]));
                 }
                 reader.Close();
 
             }
             catch (Exception ex)
             {
+                throw new Exception("Failed to get country " + ex.Message); 
             }
             finally { connection.Close(); }
 
@@ -69,13 +69,13 @@ namespace DAL_BankManagment.Countries
                 {
                     country.Id = Convert.ToInt16(reader["CountryID"]);
                     country.Name = Name;
-                    country.Currency = Currencies.clsGetCurrency.GetCurrency(Convert.ToInt16(reader["CurrencyID"]));
                 }
                 reader.Close();
 
             }
             catch (Exception ex)
             {
+                throw new Exception("Failed to get country " + ex.Message);
             }
             finally { connection.Close(); }
 
@@ -104,13 +104,13 @@ namespace DAL_BankManagment.Countries
                 {
                     country.Id = Convert.ToInt16(reader["CountryID"]);
                     country.Name = reader["CountryName"].ToString();
-                    country.Currency = Currencies.clsGetCurrency.GetCurrency(Id);
                 }
                 reader.Close();
 
             }
             catch (Exception ex)
             {
+                throw new Exception("Failed to get country " + ex.Message);
             }
             finally { connection.Close(); }
 

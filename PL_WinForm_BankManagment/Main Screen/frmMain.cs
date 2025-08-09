@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace PL_WinForm_BankManagment.Main_Screen
     public partial class frmMain : Form
     {
         Panel OpenedPanel;
+
         public frmMain()
         {
             InitializeComponent();
@@ -22,6 +24,14 @@ namespace PL_WinForm_BankManagment.Main_Screen
             ShowScreen(new frmHome());
         }
 
-  
+        Form FormHome = null;
+        Form FormAccounts = null;
+        Form FormClients = null;
+        Form FormUsers = null;
+        Form FormEmployees = null;
+        Form FormTransactions = null;
+        Form FormCurrencies = null;
+        Form FormRegisterations = null;
+
     }
 }

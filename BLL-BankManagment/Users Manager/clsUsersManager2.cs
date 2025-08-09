@@ -14,6 +14,11 @@ namespace Manager
 
         public static void LoadUsers()
         {
+            if (clsEmployeesManager.Employees.Count == 0)
+            {
+                clsEmployeesManager.LoadEmployees();
+            }
+
             Users = clsReadUsers.GetAllUsers();
         }
 
@@ -48,8 +53,14 @@ namespace Manager
         public static bool UpdateUser(clsUser user)
         {
             bool result = false;
-
-            result = clsUpdateUser.UpdateUser(user);
+            try
+            {
+                result = clsUpdateUser.UpdateUser(user);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
 
             if (result)
             {
