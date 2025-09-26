@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BLL_BankManagment.Transaction_Processes
+namespace BLL.Manager.Transaction
 {
     internal class clsWithdraw
     {

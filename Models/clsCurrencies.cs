@@ -26,6 +26,10 @@ namespace Models
             this.country = country;
         }
 
+        public string strCurrnecy()
+        {
+            return  " - " + Name;
+        }
 
     }
 }

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_BankManagment", "DAL-Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{3CF2B27C-D2F6-444B-A134-39C195F08E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL_WinForm_BankManagment", "PL_WinForm_BankManagment\PL_WinForm_BankManagment.csproj", "{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PL_WinForm", "PL_WinForm\PL_WinForm.csproj", "{3996DB52-421F-40E5-BF45-51A72A638C20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{3CF2B27C-D2F6-444B-A134-39C195F08E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CF2B27C-D2F6-444B-A134-39C195F08E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CF2B27C-D2F6-444B-A134-39C195F08E50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0C9D53C-F5BD-4C4C-BBEE-DBBB7040BF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3996DB52-421F-40E5-BF45-51A72A638C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3996DB52-421F-40E5-BF45-51A72A638C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3996DB52-421F-40E5-BF45-51A72A638C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3996DB52-421F-40E5-BF45-51A72A638C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+    
+
     public class clsEmployee
     {
         public enum enDepartments
@@ -15,15 +17,18 @@ namespace Models
         };
 
         public short Id { get; set; }
-        public short PersonId { get; set; }
         public clsPerson Person { get; set; }
         public double Salary { get; set; }
         public enDepartments Department { get; set; }
-        public short ManagerId { get; set; }
-
         public clsEmployee Manager { get; set; }
 
-        public clsEmployee() { }
+        public short ManagerId { get; set; }
+
+
+        public clsEmployee() 
+        { 
+            Person = new clsPerson();
+        }
         public clsEmployee(short ID, clsPerson Person, double Salary, enDepartments Department, clsEmployee Maneger = null)
         {
             this.Id = ID;
@@ -37,6 +42,7 @@ namespace Models
         {
             return (this.Id + " - " + this.Person.FirstName + this.Person.LastName);
         }
+
 
 
     }

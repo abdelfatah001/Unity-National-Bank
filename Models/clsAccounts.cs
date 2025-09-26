@@ -23,7 +23,10 @@ namespace Models
         public clsCurrency currency { get; set; }
 
 
-        public  clsAccount() { }
+        public  clsAccount() 
+        {
+            currency = new clsCurrency();
+        }
         public clsAccount(short Id, double Balance, DateTime CreatedDate, clsClient Client, clsCurrency Currency)
         {
             this.Id = Id;
@@ -32,6 +35,8 @@ namespace Models
             this.client = Client;
             this.currency = Currency;
         }
+
+     
 
 
 

@@ -41,36 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accounts\clsDeleteAccount.cs" />
-    <Compile Include="Accounts\clsGetAccount.cs" />
-    <Compile Include="Accounts\clsInsertAccount.cs" />
-    <Compile Include="Accounts\clsReadAccounts.cs" />
-    <Compile Include="Accounts\clsUpdateAccount.cs" />
-    <Compile Include="Clients\clsDeleteClient.cs" />
-    <Compile Include="Clients\clsGetClient.cs" />
-    <Compile Include="Clients\clsInsertClient.cs" />
-    <Compile Include="Clients\clsReadClients.cs" />
-    <Compile Include="Clients\clsUpdateClient.cs" />
-    <Compile Include="Countries\clsGetCountry.cs" />
-    <Compile Include="Countries\clsReadCountry.cs" />
-    <Compile Include="Currencies\clsGetCurrency.cs" />
-    <Compile Include="Currencies\clsReadCurrencys.cs" />
-    <Compile Include="DBConnection.cs" />
-    <Compile Include="Employees\clsDeleteEmployee.cs" />
-    <Compile Include="Employees\clsGetEmployee.cs" />
-    <Compile Include="Employees\clsInsertEmployee.cs" />
-    <Compile Include="Employees\clsReadEmployee.cs" />
-    <Compile Include="Employees\clsUpdateEmployee.cs" />
-    <Compile Include="Persons\clsDeletePerson.cs" />
-    <Compile Include="Persons\clsGetPerson.cs" />
-    <Compile Include="Persons\clsInsertPerson.cs" />
-    <Compile Include="Persons\clsUpdatePerson.cs" />
+    <Compile Include="Repositories\AccountsRepository.cs" />
+    <Compile Include="Repositories\ClientsRepository.cs" />
+    <Compile Include="Repositories\CountriesRepository.cs" />
+    <Compile Include="Repositories\CurrenciesRepository.cs" />
+    <Compile Include="Templete\DBConnection.cs" />
+    <Compile Include="Repositories\EmployeesRepository.cs" />
+    <Compile Include="Templete\Repository.cs" />
+    <Compile Include="Repositories\PersonsRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Users\clsDeleteUser.cs" />
-    <Compile Include="Users\clsGetUser.cs" />
-    <Compile Include="Users\clsInsertUser.cs" />
-    <Compile Include="Users\clsReadUsers.cs" />
-    <Compile Include="Users\clsUpdateUser.cs" />
+    <Compile Include="Repositories\clsUsersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
@@ -78,5 +58,6 @@
       <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

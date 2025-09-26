@@ -1,11 +1,11 @@
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\BLL-BankManagment.dll
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\BLL-BankManagment.pdb
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\DAL-BankManagment.dll
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\Models.dll
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\DAL-BankManagment.pdb
+C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\Models.pdb
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL_BankManagment.csproj.AssemblyReference.cache
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL_BankManagment.csproj.CoreCompileInputs.cache
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL_Bank.4C521AAC.Up2Date
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-BankManagment.dll
 C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\obj\Debug\BLL-BankManagment.pdb
-C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\Models.dll
-C:\Users\Mohamed\source\repos\BankManagmentSystem\BLL-BankManagment\bin\Debug\Models.pdb

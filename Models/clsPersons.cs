@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+
     public class clsPerson
     {
 
@@ -21,7 +22,7 @@ namespace Models
 
         public clsPerson()
         {
-
+            Country = new clsCountry();
         }
 
         public clsPerson(short Id, string FName, string LName, DateTime DateOfBirth, clsCountry Country, string Email, string Phone)

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3996DB52-421F-40E5-BF45-51A72A638C20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PL_WinForm</RootNamespace>
+    <AssemblyName>PL_WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.8, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.8\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=9.0.0.8, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.9.0.8\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.8, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.8\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Gathering\Entities Base.cs" />
+    <Compile Include="Screens\Accounts\frmAddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Accounts\frmAddAccount.Designer.cs">
+      <DependentUpon>frmAddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Currencies\frmCurrencies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Registerations\frmRegistirations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Transactions\frmTransactions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tempelete\Forms\Details Interface.cs" />
+    <Compile Include="Tempelete\Controls\Main Interfaces.cs" />
+    <Compile Include="Screens\Accounts\frmAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Accounts\frmAccounts.Designer.cs">
+      <DependentUpon>frmAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Accounts\frmDetailedAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Accounts\frmDetailedAccount.Designer.cs">
+      <DependentUpon>frmDetailedAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Clients\frmClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Clients\frmClients.Designer.cs">
+      <DependentUpon>frmClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tempelete\Forms\Main Interface.cs" />
+    <Compile Include="Data Gathering\Entities.cs" />
+    <Compile Include="Screens\Clients\frmDetailedClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Clients\frmDetailedClient.Designer.cs">
+      <DependentUpon>frmDetailedClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Employees\frmDetailedEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Employees\frmDetailedEmployee.Designer.cs">
+      <DependentUpon>frmDetailedEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Users\frmDetailedUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Users\frmDetailedUsers.Designer.cs">
+      <DependentUpon>frmDetailedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Services\AddService.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\Services\UpdateService.cs" />
+    <Compile Include="User Controls\Main Entities Screens\Events.cs" />
+    <Compile Include="Screens\Employees\frmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Employees\frmEmployees.Designer.cs">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Home\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Home\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form\frmMain.Events.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Users\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Users\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Main Entities Screens\ctrlEntityManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Main Entities Screens\ctrlEntityManager.Designer.cs">
+      <DependentUpon>ctrlEntityManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Account\AccountServices.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\Account\ctrlDetailedAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Account\ctrlDetailedAccounts.Designer.cs">
+      <DependentUpon>ctrlDetailedAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Account\Events.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Account\Show Clientcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Account\UIHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Client\ClientServices.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\Client\Events.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Client\UIHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Client\ctrlDetailedClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Client\ctrlDetailedClient.Designer.cs">
+      <DependentUpon>ctrlDetailedClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Employee\EmployeeServices.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\Employee\ctrlDetailedEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Employee\ctrlDetailedEmployee.Designer.cs">
+      <DependentUpon>ctrlDetailedEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Employee\Events.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Employee\ShowManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Employee\UIHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Person\PersonServices.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\Person\ctrlDetailedPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\Person\ctrlDetailedPerson.Designer.cs">
+      <DependentUpon>ctrlDetailedPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tempelete\Controls\Details Interfaces.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\Person\UIHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\User\UserServices.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\User\Events.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\User\AccessManager.cs" />
+    <Compile Include="User Controls\Detailed Records Screens\User\ctrlDetailedUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\User\ctrlDetailedUsers.Designer.cs">
+      <DependentUpon>ctrlDetailedUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Detailed Records Screens\User\UIHelper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Screens\Accounts\frmAddAccount.resx">
+      <DependentUpon>frmAddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Accounts\frmAccounts.resx">
+      <DependentUpon>frmAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Accounts\frmDetailedAccount.resx">
+      <DependentUpon>frmDetailedAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Clients\frmClients.resx">
+      <DependentUpon>frmClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Clients\frmDetailedClient.resx">
+      <DependentUpon>frmDetailedClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Employees\frmDetailedEmployee.resx">
+      <DependentUpon>frmDetailedEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Employees\frmEmployees.resx">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Home\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Form\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Screens\Users\frmDetailedUsers.resx">
+      <DependentUpon>frmDetailedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Users\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Main Entities Screens\ctrlEntityManager.resx">
+      <DependentUpon>ctrlEntityManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Detailed Records Screens\Account\ctrlDetailedAccounts.resx">
+      <DependentUpon>ctrlDetailedAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Detailed Records Screens\Client\ctrlDetailedClient.resx">
+      <DependentUpon>ctrlDetailedClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Detailed Records Screens\Employee\ctrlDetailedEmployee.resx">
+      <DependentUpon>ctrlDetailedEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Detailed Records Screens\Person\ctrlDetailedPerson.resx">
+      <DependentUpon>ctrlDetailedPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Detailed Records Screens\User\ctrlDetailedUsers.resx">
+      <DependentUpon>ctrlDetailedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL-BankManagment\BLL_BankManagment.csproj">
+      <Project>{ab918fd0-9871-4661-b1a3-82623b2c22f9}</Project>
+      <Name>BLL_BankManagment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL-BankManagment\DAL_BankManagment.csproj">
+      <Project>{f1a4fc89-b59f-4c6b-b2c7-a20bea90f67b}</Project>
+      <Name>DAL_BankManagment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{3cf2b27c-d2f6-444b-a134-39c195f08e50}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

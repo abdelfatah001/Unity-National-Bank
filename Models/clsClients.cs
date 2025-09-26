@@ -30,6 +30,10 @@ namespace Models
 
         }
 
+        public string strClient ()
+        {
+            return Id.ToString() + " - " + Person.FullName();
+        }
      
 
     }

@@ -1,0 +1,104 @@
+﻿using DAL.Repository;
+using Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using PL_WinForm.User_Controls;
+using PL_WinForm.Data_Gathering;
+using BLL_BankManagment;
+using System.Runtime.CompilerServices;
+using PL_WinForm.Screens.Clients;
+using System.Diagnostics.Eventing.Reader;
+
+namespace PL_WinForm.Clients
+{
+    public partial class frmClients : Form, IClientScreen
+    { 
+      
+
+        public frmClients()
+        { // used to just intialize the form in sidebar panels tags of different sreens
+
+        }
+
+         bool IScreen.IsLoaded { get; set; } = false;
+
+        public void LoadScreen() 
+        { 
+            InitializeComponent();
+
+            ((IClientScreen)this).ReintializeCtrl();
+
+            ShowScreen();
+
+        }
+
+        void IRecordsScreen<clsClient>.ReintializeCtrl ()
+        {
+            ctrlClientManager1  = new ctrlClientManager(new clsClientEntity(new clsClientManager(new clsClientCache(), new clsClientRepo(new clsClientsRepository(new clsPersonRepository())))));
+
+            this.Controls.Clear();
+            this.Controls.Add(ctrlClientManager1);
+            ctrlClientManager1.Dock = DockStyle.Fill;
+
+            ctrlClientManager1.OnDataRowClick += CtrlClientManager1_OnDataRowClick;
+
+        }
+
+        public void ShowScreen()
+        {
+            List<clsClient> Clients = ctrlClientManager1.LoadEntityData();
+            if (!Clients.Any())
+                MessageBox.Show("No Clients");
+
+            List<string> cloumns = new List<string>
+            {"Id", "Status", "First Name", "Last Name", "Join Date", "Phone", "Email", "Country", "Age"};
+
+            ctrlClientManager1.CreateTableHeader(cloumns);
+
+            foreach (clsClient c in Clients)
+            {
+                List<string> row = new List<string>
+                {c.Id.ToString(), c.Status.ToString(), c.Person.FirstName, c.Person.LastName, c.JoinData.ToString(),
+                c.Person.Phone, c.Person.Email, c.Person.Country.Name, c.Person.Age.ToString() };
+
+                ctrlClientManager1.AddRow(row, c);
+            }
+
+        }
+
+        private void CtrlClientManager1_OnDataRowClick (object sender, RecordEvevtsArgs<clsClient> e)
+        {
+            if (frmDetailedClient.IsOpened)
+                return;
+
+
+            frmDetailedClient frm = new frmDetailedClient(e.obj, (short) e.RowIndex);
+            frm.DataBack += frmDetailedClient_DataBack;
+            frm.Show();
+        }
+
+        public void ReflectUpdateOnUI(short index, clsClient client)
+        {
+            List<string> lstRow = new List<string>
+            { client.Id.ToString(), client.Status.ToString(), client.Person.FirstName, client.Person.LastName, client.JoinData.ToString(),
+            client.Person.Phone, client.Person.Email, client.Person.Country.Name, client.Person.Age.ToString() };
+
+            ctrlClientManager1.UpdateRow(index, lstRow, client);
+        }
+
+        private void frmDetailedClient_DataBack (object sender, short Index, clsClient client)
+        {
+            ReflectUpdateOnUI(Index, client);
+        }
+
+    }
+}
+
+

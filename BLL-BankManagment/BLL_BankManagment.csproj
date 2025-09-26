@@ -41,20 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accounts Manager\clsAccountsManager2.cs" />
-    <Compile Include="Accounts Manager\clsAccountsManager1.cs" />
-    <Compile Include="Clients Manager\clsClientsManager2.cs" />
-    <Compile Include="Clients Manager\clsClientsManager1.cs" />
-    <Compile Include="clsCountriesManager.cs" />
-    <Compile Include="clsCurrenciesManager.cs" />
-    <Compile Include="Employee Manager\clsEmployeesManager2.cs" />
-    <Compile Include="Employee Manager\clsEmployeesManager1.cs" />
+    <Compile Include="Managers\CountriesManager.cs" />
+    <Compile Include="Managers\Currencies Manager.cs" />
+    <Compile Include="Managers\Account Manager.cs" />
+    <Compile Include="Templete\Cache.cs" />
+    <Compile Include="Managers\Employee Manager.cs" />
+    <Compile Include="Managers\Client Manager.cs" />
+    <Compile Include="Templete\Manager Interfaces.cs" />
+    <Compile Include="Templete\Manager.cs" />
+    <Compile Include="Managers\PersonManager.cs" />
+    <Compile Include="Templete\Repo.cs" />
     <Compile Include="Transaction Processes\clsDeposit.cs" />
     <Compile Include="Transaction Processes\clsTransfere.cs" />
     <Compile Include="Transaction Processes\clsWithdraw.cs" />
-    <Compile Include="Users Manager\clsUsersManager2.cs" />
-    <Compile Include="Users Manager\clsUsersManager1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Managers\User Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL-BankManagment\DAL_BankManagment.csproj">
@@ -66,5 +67,6 @@
       <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

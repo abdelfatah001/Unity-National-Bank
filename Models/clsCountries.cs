@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+
     public class clsCountry
     {
         public short Id { get; set; }
