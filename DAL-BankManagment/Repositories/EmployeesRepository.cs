@@ -97,7 +97,12 @@ namespace DAL.Repository
             cmd.Parameters.AddWithValue("@Salary", employee.Salary);
             cmd.Parameters.AddWithValue("@PersonID", employee.Person.Id);
             cmd.Parameters.AddWithValue("@DepartmentID", Convert.ToInt16(employee.Department));
-            cmd.Parameters.AddWithValue("@ManagerID", employee.Manager.Id);
+
+            if (employee.ManagerId != -1)
+                cmd.Parameters.AddWithValue("@ManagerID", employee.Manager.Id);
+
+            else
+                cmd.Parameters.AddWithValue("@ManagerID", DBNull.Value);
 
 
             try

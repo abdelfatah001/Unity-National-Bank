@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddAccount));
             this.ctrlDetailedAccounts1 = new PL_WinForm.User_Controls.Details_Presenter.Account.ctrlDetailedAccounts();
             this.SuspendLayout();
             // 
@@ -39,6 +40,7 @@
             this.ctrlDetailedAccounts1.MaximumSize = new System.Drawing.Size(643, 570);
             this.ctrlDetailedAccounts1.MinimumSize = new System.Drawing.Size(643, 320);
             this.ctrlDetailedAccounts1.Name = "ctrlDetailedAccounts1";
+            this.ctrlDetailedAccounts1.SelectedRecord = null;
             this.ctrlDetailedAccounts1.Size = new System.Drawing.Size(643, 337);
             this.ctrlDetailedAccounts1.TabIndex = 0;
             this.ctrlDetailedAccounts1.UpdateService = null;
@@ -50,8 +52,8 @@
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(659, 339);
             this.Controls.Add(this.ctrlDetailedAccounts1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddAccount";
-            this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAddAccount_FormClosed);
             this.ResumeLayout(false);
 

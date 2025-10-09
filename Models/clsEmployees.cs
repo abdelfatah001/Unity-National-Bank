@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Models
 {
@@ -29,13 +30,20 @@ namespace Models
         { 
             Person = new clsPerson();
         }
-        public clsEmployee(short ID, clsPerson Person, double Salary, enDepartments Department, clsEmployee Maneger = null)
+
+        public void Update (double Salary, enDepartments department, clsPerson person, clsEmployee manager)
         {
-            this.Id = ID;
-            this.Person = Person;
             this.Salary = Salary;
-            this.Department = Department;
-            this.Manager = Maneger;
+            this.Department = department;
+            this.Manager = manager;
+
+            if (manager != null)
+                this.ManagerId = manager.Id;
+
+            else
+                this.ManagerId = -1;
+
+            this.Person = person;
         }
 
         public string strEmployee()

@@ -15,7 +15,6 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             txtLastName.ReadOnly = true;
             txtEmail.ReadOnly = true;
             txtPhone.ReadOnly = true;
-            cbCountries.Enabled = false;
         }
 
         public void DelockUpdate()
@@ -27,5 +26,14 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             cbCountries.Enabled = true;
         }
 
+        private void ChangeAgeLabelToDate ()
+        {
+            lbl_Age.Text = "Date of birth";
+        }
+
+        public void ConvertComboBoxToReadOnly ()
+        {
+            cbCountries.Enabled = false;
+        }
     }
 }

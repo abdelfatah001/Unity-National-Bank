@@ -76,7 +76,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.User
                 _cbxAdmin.Checked = true;
             }
 
-            else if (AccessLabelValue < fullAccess && IsAllCBXChecked == enIsAllCBXChecked.AllChecked)
+            else if (AccessLabelValue < fullAccess && IsAllCBXChecked == enIsAllCBXChecked.AllChecked) // if all checked while the accessibility is not all uncheck cbxAdmin
             {
                 IsAllCBXChecked = enIsAllCBXChecked.SemiChecked;
                 _cbxAdmin.Checked = false;

@@ -49,6 +49,7 @@ namespace PL_WinForm.Employees
             this.ClientSize = new System.Drawing.Size(686, 656);
             this.Controls.Add(this.ctrlEmployeeManager1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "frmEmployees";
             this.ResumeLayout(false);
 

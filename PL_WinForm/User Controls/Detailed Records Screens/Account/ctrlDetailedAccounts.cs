@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Linq;
 using System.Security.AccessControl;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,9 +18,12 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 {
     public partial class ctrlDetailedAccounts : UserControl, IDetailedAccount
     {
-        private enView _View;
+        private enView _view;
 
         public clsAccount SelectedRecord { get; set; }
+
+
+        private IEntity<clsAccount> _accountEntity;
 
         private IEntity<clsClient> _clientEntity;
 
@@ -42,67 +46,57 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
         }
 
      
-        void IReLoadCtrl.ReintializeCtrl()
+        void IReLoadCtrl.ReintializeSubCtrl()
         {
-            ctrlDetailedClient1.Reintialize(SelectedRecord.client, _clientEntity, _personEntity, _countryEnity, true);
+            ctrlDetailedClient1.Reintialize(enView.Show, SelectedRecord.client, _clientEntity, _personEntity, _countryEnity);
             ctrlDetailedClient1.Location = new Point(0, 250);
 
         }
         public void Reintialize (enView view, clsAccount account, IEntity<clsAccount> accountEntity, IEntity<clsClient> clienteEntity, IInvisibleEntity<clsPerson> personEntity, IReadOnlyEntity<clsCountry> countryEnity, IReadOnlyEntity<clsCurrency> currencyEntity)
         {
-
+            _view = view;
             SelectedRecord = account;
+            _accountEntity = accountEntity;
             _clientEntity = clienteEntity;
-            _personEntity = personEntity;
-            _countryEnity = countryEnity;
             _currencyEntity = currencyEntity;
 
+            if (_view == enView.Show)
+            {
+                _personEntity = personEntity;
+                _countryEnity = countryEnity;
+            }
 
-            ShowViewOf(view);
+            ShowViewOf();
             ((IDetailedAccount)this).FillForm();
 
-            switch (_View)
-            {
-                case enView.Show:
-                    UpdateService = new clsAccountUpdateService(account, accountEntity, cbAccountStatus);
-                    ((IDetailedAccount)this).ReintializeCtrl();
-                    break;
+            if (_view == enView.Update)
+                UpdateService = new clsUpdateAccountService(accountEntity, account, cbAccountStatus);
 
-                case enView.Add:
-                    AddService = new clsAccountAddService(accountEntity,  clienteEntity, _currencyEntity, ref account, cbAccountStatus, cbClients, cbCurrency);
-                    break;
-            }
-            
-            
-
+            else if (_view ==  enView.Add)
+                AddService = new clsAddAccountService(accountEntity, ref account,  clienteEntity, _currencyEntity, cbAccountStatus, cbClients, cbCurrency);
 
         }
 
-        private void ShowViewOf (enView view)
+        private void ShowViewOf()
         {
-            _View = view;
-
-            switch (_View)
+            if (_view != enView.Add)
             {
-                case enView.Show:
+                IntializeCtrl();
+                ((IDetailedAccount)this).ReintializeSubCtrl();
+                ShowReducedView();
+            }
 
-                    IntializeCtrl();
-                    ShowReducedView();
-                    break;
-
-
-                case enView.Add:
-
-                    IntializecbClients();
-                    AddView();
-                    break;
+            else
+            {
+                IntializecbClients();
+                AddView();
             }
         }
 
 
         void ILoad.FillForm()
         {
-            if (_View == enView.Add)
+            if (_view == enView.Add)
             { 
                 FillClientsComboBox();
                 FillCurrencyComboBox();
@@ -114,6 +108,13 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         private void FillStatusComboBox ()
         {
+            if (_view == enView.Show)
+            {
+                cbAccountStatus.Items.Add(SelectedRecord.Status.ToString());
+                cbAccountStatus.SelectedIndex = 0;
+                return;
+            }
+
             for (int i = 1; i <= 10; i++)
                 cbAccountStatus.Items.Add( ((clsAccount.enAccountStatus)i).ToString() );
 
@@ -137,8 +138,14 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         private void FillData ()
         {
-            if (SelectedRecord == null)
+            if (_view == enView.Add)
                 return;
+
+            if (SelectedRecord == null)
+            {
+                MessageBox.Show("Account object is not assigned to fill its data");
+                return;
+            }
 
             lblId.Text = SelectedRecord.Id.ToString();
             lblAccountName.Text = SelectedRecord.AccountName.ToString();
@@ -149,7 +156,8 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             cbCurrency.Items.Add(SelectedRecord.currency.strCurrnecy());
             cbCurrency.SelectedIndex = 0;
 
-            cbAccountStatus.SelectedIndex = ((int)SelectedRecord.Status) - 1;
+            if (_view != enView.Show)
+                cbAccountStatus.SelectedIndex = ((int)SelectedRecord.Status) - 1;
         }
 
 }

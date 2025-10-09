@@ -100,7 +100,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         private void DisappearBtnShowClient ()
         {
-            btnShowEmployee.Visible = false;
+            btnShowClient.Visible = false;
         }
 
         private void CustomizeClientIdDataShow ()

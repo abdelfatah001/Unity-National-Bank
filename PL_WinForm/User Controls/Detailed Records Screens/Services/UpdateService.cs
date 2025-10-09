@@ -32,7 +32,7 @@ namespace PL_WinForm.User_Controls.Detailed_Records_Screens.Add_Record
         protected abstract void UpdateObject();
        
 
-        enDataUpdated IUpdate.Save()
+        enDataUpdated ISave<enDataUpdated>.Save()
         {
 
             if (!DataChanged)
@@ -42,6 +42,7 @@ namespace PL_WinForm.User_Controls.Detailed_Records_Screens.Add_Record
 
             return (_Entity.Update(_record)) ? enDataUpdated.Saved : enDataUpdated.NotChanged;
         }
+
 
         abstract public void SaveUpdates();
 

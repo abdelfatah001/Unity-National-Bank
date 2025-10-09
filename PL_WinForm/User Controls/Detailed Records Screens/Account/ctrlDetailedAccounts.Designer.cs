@@ -37,7 +37,7 @@
             this.cbAccountStatus = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnShowEmployee = new System.Windows.Forms.Button();
+            this.btnShowClient = new System.Windows.Forms.Button();
             this.lbl_ClientId = new System.Windows.Forms.Label();
             this.lblClientId = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -143,16 +143,16 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnShowEmployee
+            // btnShowClient
             // 
-            this.btnShowEmployee.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnShowEmployee.Location = new System.Drawing.Point(404, 241);
-            this.btnShowEmployee.Name = "btnShowEmployee";
-            this.btnShowEmployee.Size = new System.Drawing.Size(118, 25);
-            this.btnShowEmployee.TabIndex = 50;
-            this.btnShowEmployee.Text = "Show Employee";
-            this.btnShowEmployee.UseVisualStyleBackColor = true;
-            this.btnShowEmployee.Click += new System.EventHandler(this.btnShowEmployee_Click);
+            this.btnShowClient.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnShowClient.Location = new System.Drawing.Point(404, 241);
+            this.btnShowClient.Name = "btnShowClient";
+            this.btnShowClient.Size = new System.Drawing.Size(118, 25);
+            this.btnShowClient.TabIndex = 50;
+            this.btnShowClient.Text = "Show Client";
+            this.btnShowClient.UseVisualStyleBackColor = true;
+            this.btnShowClient.Click += new System.EventHandler(this.btnShowEmployee_Click);
             // 
             // lbl_ClientId
             // 
@@ -234,7 +234,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCreatedDate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnShowEmployee);
+            this.Controls.Add(this.btnShowClient);
             this.Controls.Add(this.lbl_ClientId);
             this.Controls.Add(this.lblClientId);
             this.Controls.Add(this.btnCancel);
@@ -302,7 +302,7 @@
         private System.Windows.Forms.Label label7;
         private ctrlDetailedClient ctrlDetailedClient1;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnShowEmployee;
+        private System.Windows.Forms.Button btnShowClient;
         private System.Windows.Forms.Label lbl_ClientId;
         private System.Windows.Forms.Label lblClientId;
         private System.Windows.Forms.Label label4;

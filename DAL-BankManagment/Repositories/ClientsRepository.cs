@@ -72,10 +72,11 @@ namespace DAL.Repository
 
             string query =
                 @"Insert Into Clients (ClientStatusID, PersonID, JoinDate)
-                 Values (@ClientStatusID, PersonID, JoinDate)";
+                 Values (@ClientStatusID, @PersonID, @JoinDate)
+                 Select SCOPE_IDENTITY();";
 
             SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@ClienStatusID", Convert.ToInt32(client.Status));
+            cmd.Parameters.AddWithValue("@ClientStatusID", Convert.ToInt32(client.Status));
             cmd.Parameters.AddWithValue("@PersonID", client.Person.Id);
             cmd.Parameters.AddWithValue("@JoinDate", client.JoinData);
 

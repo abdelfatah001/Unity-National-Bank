@@ -16,9 +16,9 @@ namespace Models
 
 
         public clsUser() { } 
-        public clsUser(short Id, string UserName, string Password, int AccessCode, clsEmployee Employee)
+
+        public void Update (string UserName, string Password, int AccessCode, clsEmployee Employee)
         {
-            this.Id = Id;
             this.UserName = UserName;
             this.Password = Password;
             this.AccessCode = AccessCode;

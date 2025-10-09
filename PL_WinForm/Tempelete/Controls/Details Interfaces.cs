@@ -12,32 +12,37 @@ namespace PL_WinForm.User_Controls.Details_Presenter
     /// <summary>
     /// Control view for adding record or uodating an existing one
     /// </summary>
-    public enum enView { Add, Show };
+    public enum enView { Add, Show, Update };
 
     /// <summary>
     /// enum to express the the save status is saved or not or not changed at all
     /// </summary>
-    public enum enDataUpdated { NotChanged, Saved, NotSaved};
+    public enum enDataUpdated { NotChanged, Saved, NotSaved };
+
+
+    /// <summary>
+    /// interface for save methods used after CRUD operations to save them
+    /// </summary>
+    public interface ISave<TResult> where TResult : Enum
+    {
+        TResult Save();
+        void SaveUpdates ();
+    }
 
     /// <summary>
     /// interface for update methods in datailed record control
     /// </summary>
-    public interface IUpdate
+    public interface IUpdate : ISave<enDataUpdated>
     {
         bool DataChanged { get; set; }
-        enDataUpdated Save();
-        void SaveUpdates ();
-
     }
 
     /// <summary>
     /// interface for add methods in add record control
     /// </summary>
-    public interface IAdd<T>
+    public interface IAdd<T> : ISave<enAddingOprtn>
     { 
-        void Insert(); 
         bool IsCanceled();
-        void Add();
         T ReturnFilledObject();
     }
 
@@ -50,15 +55,10 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
 
     /// <summary>
-    /// interface to reintailize person control by constructor to show person data instead of designer constructor
-    /// </summary>
-    public interface IReloadPersonCtrl { void ReintializeCtrl(bool readOnly = false); }
-
-    /// <summary>
     /// interface to reintailize control of client or employee by constructor to show themom read only mode data instead of designer constructor
     /// used by account and user controls
     /// </summary>
-    public interface IReLoadCtrl { void ReintializeCtrl(); } 
+    public interface IReLoadCtrl { void ReintializeSubCtrl(); } 
 
     /// <summary>
     /// store the varable of record object
@@ -87,7 +87,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
     /// interface for detailed record methods of client and employee
     /// </summary>
     /// <typeparam name="T">record type</typeparam>
-    public interface IDetailedRecord<T> : ILoad, IReloadPersonCtrl, ICtrlVariables<T>, ICloseCtrl
+    public interface IDetailedRecord<T> : ILoad, IReLoadCtrl, ICtrlVariables<T>, ICloseCtrl
     {
         /// <summary>
         /// method of check is person data chenged to reflect updates in data grid view

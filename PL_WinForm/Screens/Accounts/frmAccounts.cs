@@ -11,6 +11,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,8 @@ namespace PL_WinForm.Accounts
 
         public bool IsLoaded { get; set; } = false;
 
+        public clsUIEntityScreenManager<clsAccount> screenManager { get; set; }
+
         public frmAccounts()
         {
 
@@ -32,15 +35,18 @@ namespace PL_WinForm.Accounts
 
             ((IAccountScreen)this).ReintializeCtrl();
 
+            ShowScreen();
+
             ctrlAccountManager1.OnDataRowClick += CtrlAccountManager1_OnDataRowClick;
             ctrlAccountManager1.OnAddClick += CtrlAccountManager1_OnAddClick;
-            ShowScreen();
         }
 
        
 
         void IRecordsScreen<clsAccount>.ReintializeCtrl ()
         {
+            screenManager = new clsUIEntityScreenManager<clsAccount>();
+
             ctrlAccountManager1 = new ctrlAccountManager(new clsAccountEntity(new clsAccountManager(new clsAccountCache(), new clsAccountRepo(new clsAccountsRepository(new clsClientsRepository(new clsPersonRepository()))))));
             
             this.Controls.Clear();
@@ -76,7 +82,9 @@ namespace PL_WinForm.Accounts
 
             frmAddAccount frm = new frmAddAccount();
 
-            frm.DataBack += Frm_DataBack; ;
+            frm.DataBack += Frm_DataBack;
+
+            screenManager.SetMDIParent(this, frm);
 
             frm.Show();
         }
@@ -86,35 +94,31 @@ namespace PL_WinForm.Accounts
             if (frmDetailedAccount.IsOpened)
                 return;
 
-
-
             frmDetailedAccount frm = new frmDetailedAccount(e.obj,(short) e.RowIndex);
 
             frm.DataBack += Frm_DataBack; ;
+
+            screenManager.SetMDIParent(this, frm);
 
             frm.Show();
 
         }
 
-        private void Frm_DataBack(object sender, short index, clsAccount data)
+        private void Frm_DataBack(object sender, short index, clsAccount account)
         {
-            ((IAccountScreen)this).ReflectUpdateOnUI(index, data);
+            List<string> row = ((IAccountScreen)this).GetRecordInList(account);
+
+            screenManager.ReflectUpdateOnUI(ctrlAccountManager1, index, row, account);
         }
 
-        void IRecordsScreen<clsAccount>.ReflectUpdateOnUI (short index, clsAccount account)
+      
+        List<string> IRecordsScreen<clsAccount>.GetRecordInList (clsAccount account)
         {
-            List<string> row = new List<string>
+            return new List<string>
             {
                 account.Id.ToString(), account.AccountName, account.Status.ToString(), account.Balance.ToString(), account.CreatedDate.ToString(),
                 account.currency.Name, account.client.Id.ToString()
             };
-
-            if (index != -1)
-                ctrlAccountManager1.UpdateRow(index, row , account);
-
-            else 
-                ctrlAccountManager1.AddRow(row, account);
         }
-
     }
 }

@@ -47,6 +47,7 @@ namespace PL_WinForm.Accounts
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(689, 655);
             this.Controls.Add(this.ctrlAccountManager1);
+            this.IsMdiContainer = true;
             this.Name = "frmAccounts";
             this.Text = "frmAccounts";
             this.ResumeLayout(false);

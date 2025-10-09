@@ -1,33 +1,36 @@
-﻿using DAL.Repository;
+﻿using BLL_BankManagment;
+using DAL.Repository;
 using Models;
+using PL_WinForm.Data_Gathering;
+using PL_WinForm.Screens.Clients;
+using PL_WinForm.User_Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PL_WinForm.User_Controls;
-using PL_WinForm.Data_Gathering;
-using BLL_BankManagment;
-using System.Runtime.CompilerServices;
-using PL_WinForm.Screens.Clients;
-using System.Diagnostics.Eventing.Reader;
 
 namespace PL_WinForm.Clients
 {
     public partial class frmClients : Form, IClientScreen
     { 
       
+         bool IScreen.IsLoaded { get; set; } = false;
+        public clsUIEntityScreenManager<clsClient> screenManager { get; set; }
+
 
         public frmClients()
         { // used to just intialize the form in sidebar panels tags of different sreens
 
         }
-
-         bool IScreen.IsLoaded { get; set; } = false;
 
         public void LoadScreen() 
         { 
@@ -36,11 +39,12 @@ namespace PL_WinForm.Clients
             ((IClientScreen)this).ReintializeCtrl();
 
             ShowScreen();
-
         }
 
         void IRecordsScreen<clsClient>.ReintializeCtrl ()
         {
+            screenManager = new clsUIEntityScreenManager<clsClient> ();
+
             ctrlClientManager1  = new ctrlClientManager(new clsClientEntity(new clsClientManager(new clsClientCache(), new clsClientRepo(new clsClientsRepository(new clsPersonRepository())))));
 
             this.Controls.Clear();
@@ -48,6 +52,7 @@ namespace PL_WinForm.Clients
             ctrlClientManager1.Dock = DockStyle.Fill;
 
             ctrlClientManager1.OnDataRowClick += CtrlClientManager1_OnDataRowClick;
+            ctrlClientManager1.OnAddClick += CtrlClientManager1_OnAddClick;
 
         }
 
@@ -81,21 +86,36 @@ namespace PL_WinForm.Clients
 
             frmDetailedClient frm = new frmDetailedClient(e.obj, (short) e.RowIndex);
             frm.DataBack += frmDetailedClient_DataBack;
+            screenManager.SetMDIParent(this, frm);
+
             frm.Show();
         }
 
-        public void ReflectUpdateOnUI(short index, clsClient client)
+        private void CtrlClientManager1_OnAddClick(object sender, EventArgs e)
         {
-            List<string> lstRow = new List<string>
-            { client.Id.ToString(), client.Status.ToString(), client.Person.FirstName, client.Person.LastName, client.JoinData.ToString(),
+            if (frmAddClients.IsOpened)
+                return;
+
+            frmAddClients frm = new frmAddClients();
+            frm.DataBack += frmDetailedClient_DataBack;
+            screenManager.SetMDIParent(this, frm);
+
+            frm.Show();
+        }
+
+        List<string> IRecordsScreen<clsClient>.GetRecordInList(clsClient client)
+        {
+            return new List<string>
+            { client.Id .ToString(), client.Status.ToString(), client.Person.FirstName, client.Person.LastName, client.JoinData.ToString(),
             client.Person.Phone, client.Person.Email, client.Person.Country.Name, client.Person.Age.ToString() };
 
-            ctrlClientManager1.UpdateRow(index, lstRow, client);
         }
 
         private void frmDetailedClient_DataBack (object sender, short Index, clsClient client)
         {
-            ReflectUpdateOnUI(Index, client);
+            List<string> row = ((IClientScreen)this).GetRecordInList(client);
+
+            screenManager.ReflectUpdateOnUI(ctrlClientManager1, Index, row, client);
         }
 
     }

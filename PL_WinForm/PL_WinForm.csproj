@@ -84,14 +84,32 @@
     <Compile Include="Screens\Accounts\frmAddAccount.Designer.cs">
       <DependentUpon>frmAddAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Clients\frmAddClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Clients\frmAddClients.Designer.cs">
+      <DependentUpon>frmAddClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Currencies\frmCurrencies.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Employees\frmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Employees\frmAddEmployee.Designer.cs">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\Registerations\frmRegistirations.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\Transactions\frmTransactions.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Users\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Users\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Tempelete\Forms\Details Interface.cs" />
     <Compile Include="Tempelete\Controls\Main Interfaces.cs" />
@@ -248,11 +266,17 @@
     <EmbeddedResource Include="Screens\Accounts\frmDetailedAccount.resx">
       <DependentUpon>frmDetailedAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Clients\frmAddClients.resx">
+      <DependentUpon>frmAddClients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Clients\frmClients.resx">
       <DependentUpon>frmClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Clients\frmDetailedClient.resx">
       <DependentUpon>frmDetailedClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Employees\frmAddEmployee.resx">
+      <DependentUpon>frmAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Employees\frmDetailedEmployee.resx">
       <DependentUpon>frmDetailedEmployee.cs</DependentUpon>
@@ -276,6 +300,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\Users\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Users\frmDetailedUsers.resx">
       <DependentUpon>frmDetailedUsers.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +379,5 @@
   <ItemGroup>
     <None Include="Resources\cancel-removebg-preview.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

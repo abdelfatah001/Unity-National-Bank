@@ -17,36 +17,71 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 {
     public partial class ctrlDetailedPerson : UserControl, IDetailedPerson
     {
+        private enView _view;
+
         public clsPerson SelectedRecord {  get; set; }
 
         private IInvisibleEntity<clsPerson> _personEntity;
 
         private IReadOnlyEntity<clsCountry> _countryEntity;
 
-        public clsPersonpdateService _personService;
+        public clUpdatesPersonService _UpdateService;
+
+        public clsAddPersonService _AddService;
 
         public ctrlDetailedPerson()
         {
             InitializeComponent();
         }
 
-        public void Reintialize (clsPerson person, IInvisibleEntity<clsPerson> personEntity, IReadOnlyEntity<clsCountry> countryEnity, bool readOnly = false)
+        public void Reintialize (enView view, clsPerson person, IInvisibleEntity<clsPerson> personEntity, IReadOnlyEntity<clsCountry> countryEnity)
         {
             SelectedRecord = person;
             _personEntity = personEntity;
             _countryEntity = countryEnity;
+            _view = view;
 
-            _personService = new clsPersonpdateService(personEntity, SelectedRecord, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries);
+
+            ShowViewOf();
+
+            if (_view == enView.Update)
+                _UpdateService = new clUpdatesPersonService(personEntity, SelectedRecord, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries);
+
+            else if (_view == enView.Add)
+                _AddService = new clsAddPersonService(personEntity, SelectedRecord, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries, dateTimePicker1);
 
             ((ILoad)this).FillForm();
 
-            if (readOnly)
-                LockUpdate();
 
         }
 
+        private void ShowViewOf()
+        {
+            if (_view != enView.Add)
+                IntializeAgeLabel();
+
+            switch (_view)
+            {
+                case enView.Add:
+                    IntializeDataPicker();
+                    ChangeAgeLabelToDate();
+                    break;
+
+                case enView.Show:
+                    LockUpdate();
+                    break;
+            }
+        }
+
+
         private void FillCountriesComboBox()
         {
+            if (_view == enView.Show)
+            {
+                cbCountries.Items.Add(SelectedRecord.Country.Name);
+                cbCountries.SelectedIndex = 0;
+                return;
+            }
 
             List<clsCountry> countries = _countryEntity.LoadData();
 
@@ -59,15 +94,18 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
         private void FillData()
         {
-            if (SelectedRecord != null)
-            {
-                txtFirstName.Text = SelectedRecord.FirstName;   
-                txtLastName.Text = SelectedRecord.LastName; 
-                txtEmail.Text = SelectedRecord.Email;
-                lblAge.Text = SelectedRecord.Age.ToString();
-                txtPhone.Text = SelectedRecord.Phone;   
-                cbCountries.Text = SelectedRecord.Country.Name;
-            }
+            if (_view == enView.Add)
+                return;
+
+            txtFirstName.Text = SelectedRecord.FirstName;   
+            txtLastName.Text = SelectedRecord.LastName; 
+            txtEmail.Text = SelectedRecord.Email;
+            lblAge.Text = SelectedRecord.Age.ToString();
+            txtPhone.Text = SelectedRecord.Phone;   
+
+            if (_view != enView.Show)
+                cbCountries.Text = SelectedRecord.Country.Name; //
+            
         }
 
         void ILoad.FillForm ()

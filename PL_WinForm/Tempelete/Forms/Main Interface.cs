@@ -1,8 +1,10 @@
 ﻿using Models;
 using PL_WinForm;
+using PL_WinForm.User_Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,15 +42,11 @@ namespace PL_WinForm
         /// </summary>
         void ReintializeCtrl();
 
+        List<string> GetRecordInList (T t);
 
-        /// <summary>
-        /// Reflect any recors update in the UI (data grid view)
-        /// </summary>
-        /// <param name="index">index of row on data grid view</param>
-        /// <param name="client">the object of the record to add on row's tag</param>
-        void ReflectUpdateOnUI(short index, T client);
-
+        clsUIEntityScreenManager<T> screenManager { get; set; }
     }
+
 
     /// <summary>
     /// Interface for client form
@@ -70,6 +68,41 @@ namespace PL_WinForm
     /// </summary>
     public interface IUserScreen : IRecordsScreen<clsUser> { }
 
+    public class clsUIEntityScreenManager<T>
+    {
+        public clsUIEntityScreenManager() { }   
 
+        /// <summary>
+        /// Reflect any records update in the UI (data grid view)
+        /// </summary>
+        /// <param name="index">index of row on data grid view</param>
+        /// <param name="client">the object of the record to add on row's tag</param>
+        public void ReflectUpdateOnUI(ctrlEntityManager<T> control, short index, List<string> row, T obj)
+        {
+
+            if (index != -1)
+                control.UpdateRow(index, row, obj);
+
+            else
+                control.AddRow(row, obj);
+        }
+
+        /// <summary>
+        /// to set child mdi for a parent form
+        /// </summary>
+        /// <param name="parent">parent form</param>
+        /// <param name="child">child form</param>
+        public void SetMDIParent(Form parent, Form child)
+        {
+            if (!parent.IsMdiContainer)
+                return;
+
+            child.MdiParent = parent;
+            child.StartPosition = FormStartPosition.CenterParent;
+            child.BringToFront();
+
+        }
+
+    }
 
 };

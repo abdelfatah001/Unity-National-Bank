@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
@@ -25,9 +26,8 @@ namespace Models
             Country = new clsCountry();
         }
 
-        public clsPerson(short Id, string FName, string LName, DateTime DateOfBirth, clsCountry Country, string Email, string Phone)
+        public clsPerson(string FName, string LName, DateTime DateOfBirth, clsCountry Country, string Email, string Phone)
         {
-            this.Id = Id;
             this.FirstName = FName;
             this.LastName = LName;
             this.DateOfBirth = DateOfBirth;
@@ -43,6 +43,17 @@ namespace Models
         {
             return FirstName + " " + LastName;
         }
+
+        public void Update (string FName, string LName, clsCountry Country, string Email, string Phone)
+        {
+            FirstName = FName;
+            LastName = LName;
+            DateOfBirth = DateOfBirth;
+            this.Country = Country;
+            this.Email = Email;
+            this.Phone = Phone;
+        }
+     
 
     }
 }

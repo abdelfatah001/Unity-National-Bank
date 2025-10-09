@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace PL_WinForm.User_Controls.Detailed_Records_Screens.Add_Record
 {
-    public enum enAddingOprtn { Adding, Canceled };
+    public enum enAddingOprtn { Add, Canceled, Failed };
 
 
     public abstract class clsAddService<T> : IAdd<T>
@@ -27,42 +27,31 @@ namespace PL_WinForm.User_Controls.Detailed_Records_Screens.Add_Record
             _recordToAdd =  recordToAdd;
         }
 
-        void IAdd<T>.Insert()
-        {
-            InsertInternal();
-        }
-
-        protected void InsertInternal()
-        {
-            if (operation == enAddingOprtn.Canceled)
-                return;
-                
-
-            bool isAdded = _entity.Add(ref _recordToAdd);
-
-            if (isAdded)
-            {
-                MessageBox.Show("Record saved successfully");
-                operation = enAddingOprtn.Adding;
-            }
-            else
-                MessageBox.Show("Record adding failed");
-
-
-        }
-
         public bool IsCanceled ()
         {
             return operation == enAddingOprtn.Canceled;
         }
 
-         protected abstract void FillObjectData();
-         public abstract void Add();
+         protected abstract void FillObject();
+
+
 
         public T ReturnFilledObject()
         {
+            FillObject();   
             return _recordToAdd;
         }
+
+        enAddingOprtn ISave<enAddingOprtn>.Save()
+        {
+            if (_recordToAdd == null)
+                return enAddingOprtn.Canceled;
+
+
+            return (_entity.Add(ref _recordToAdd)) ? enAddingOprtn.Add : enAddingOprtn.Failed;
+        }
+
+        abstract public void SaveUpdates();
 
 
 

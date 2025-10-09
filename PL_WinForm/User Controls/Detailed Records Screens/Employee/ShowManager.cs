@@ -46,12 +46,13 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             AssignManager(); // to assign manager of new wmployee will be shown cuz we will need its manager o show it in cbManager
 
 
-            ((IReloadPersonCtrl)this).ReintializeCtrl();
+            ((IReLoadCtrl)this).ReintializeSubCtrl();
 
             FillData();
 
             DisableSaveBtn();
             LockUpdate();
+            ConvertConboBoxToReadOnly();
         }
 
         private void DeleteManager ()
@@ -69,7 +70,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         {
             AssignEmployee();
             DeleteManager();
-            ((IReloadPersonCtrl)this).ReintializeCtrl();
+            ((IReLoadCtrl)this).ReintializeSubCtrl();
             FillData();
 
             EnableShowManager();

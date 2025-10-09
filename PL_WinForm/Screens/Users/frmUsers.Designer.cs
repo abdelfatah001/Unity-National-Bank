@@ -47,6 +47,7 @@
             this.ClientSize = new System.Drawing.Size(687, 655);
             this.Controls.Add(this.ctrlUsersManager1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "frmUsers";
             this.Text = "frmUsers";
             this.ResumeLayout(false);

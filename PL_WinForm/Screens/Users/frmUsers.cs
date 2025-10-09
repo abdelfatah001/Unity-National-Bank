@@ -19,8 +19,10 @@ namespace PL_WinForm.Users
 {
     public partial class frmUsers : Form, IUserScreen
     {
-
         public bool IsLoaded { get; set; } = false;
+
+        public clsUIEntityScreenManager<clsUser> screenManager { get; set; }
+
 
         public frmUsers()
         {
@@ -32,15 +34,20 @@ namespace PL_WinForm.Users
             
             ((IUserScreen)this).ReintializeCtrl();
 
-            ctrlUsersManager1.OnDataRowClick += CtrlUsersManager1_OnDataRowClick;
 
-            ctrlUsersManager1.ResizeDGV(450);
+            ctrlUsersManager1.ResizeDGV(460);
 
             ShowScreen();
+
+            ctrlUsersManager1.OnDataRowClick += CtrlUsersManager1_OnDataRowClick;
+            ctrlUsersManager1.OnAddClick += CtrlUsersManager1_OnAddClick;
         }
 
+
         void IRecordsScreen<clsUser>.ReintializeCtrl()
-        { 
+        {
+            screenManager = new clsUIEntityScreenManager<clsUser>();
+
             ctrlUsersManager1 = new ctrlUsersManager(new clsUserEntity(new clsUserManager(new clsUserCache(), new clsUserRepo(new clsUsersRepository(new clsEmployeesRepository(new clsPersonRepository()))))));
             ctrlUsersManager1.Dock = DockStyle.Fill;
 
@@ -72,21 +79,40 @@ namespace PL_WinForm.Users
 
             frmDetailedUsers frm = new frmDetailedUsers(e.obj, (short)e.RowIndex);
             frm.DataBack += Frm_DataBack;
+            screenManager.SetMDIParent(this, frm);
+
             frm.Show();
         }
 
+        private void CtrlUsersManager1_OnAddClick(object sender, EventArgs e)
+        {
+            if (frmAddUser.IsOpened)
+                return;
+
+            frmAddUser frm = new frmAddUser();
+            frm.DataBack += Frm_DataBack;
+            screenManager.SetMDIParent(this, frm);
+
+            frm.Show();
+        }
+
+
+
         private void Frm_DataBack(object sender, short index, clsUser user)
         {
-            ReflectUpdateOnUI(index, user);
+            List<string> row = ((IUserScreen)this).GetRecordInList(user);
+
+            screenManager.ReflectUpdateOnUI(ctrlUsersManager1, index, row, user);
         }
 
-        public void ReflectUpdateOnUI (short index, clsUser user)
+
+        List<string> IRecordsScreen<clsUser>.GetRecordInList(clsUser user)
         {
-            List<string> row = new List<string>
+            return new List<string>
             { user.Id.ToString(), user.UserName, user.Password, user.AccessCode.ToString() };
 
-            ctrlUsersManager1.UpdateRow(index, row, user);
-
         }
+
+     
     }
 }

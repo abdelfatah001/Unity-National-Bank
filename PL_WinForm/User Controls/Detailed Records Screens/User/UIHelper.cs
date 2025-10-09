@@ -83,5 +83,34 @@ namespace PL_WinForm.User_Controls.Details_Presenter.User
         {
             this.Size = new Size(643, 730);
         }
+
+        private void DisappearlblClientId()
+        {
+            lblEmployeeId.Visible = false;
+        }
+
+        private void DisappearBtnShowEmployee()
+        {
+            btnShowEmployee.Visible = false;
+        }
+
+        private void CustomizeEmployeeIdDataShow()
+        {
+            lbl_EmployeeId.Location = new Point(170, 365);
+            cbEmployees.Location = new Point(320, 365);
+        }
+
+        private void ChangebtnSaveToAdd()
+        {
+            btnSave.Text = "Add";
+        }
+
+        private void AddView()
+        {
+            DisappearlblClientId();
+            DisappearBtnShowEmployee();
+            CustomizeEmployeeIdDataShow();
+            ChangebtnSaveToAdd();
+        }
     }
 }

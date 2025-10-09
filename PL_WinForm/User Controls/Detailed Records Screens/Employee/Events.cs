@@ -18,7 +18,20 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdateService.SaveUpdates();
+            switch (_view)
+            {
+                case enView.Update :
+
+                    UpdateService.SaveUpdates();
+                    break;
+
+                case enView.Add :
+
+                    SelectedRecord = AddService.ReturnFilledObject();
+                    AddService.SaveUpdates();
+                    break;  
+            }
+
             Cancel(e);
         }
 

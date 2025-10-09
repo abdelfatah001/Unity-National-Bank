@@ -60,7 +60,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblEmployeeId = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_EmployeeId = new System.Windows.Forms.Label();
             this.btnShowEmployee = new System.Windows.Forms.Button();
             this.cbxAccountsAdmin = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
@@ -403,20 +403,20 @@
             this.lblEmployeeId.TabIndex = 38;
             this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
+            // lbl_EmployeeId
             // 
-            this.label13.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(115, 367);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(113, 23);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "Employee Id";
+            this.lbl_EmployeeId.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_EmployeeId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_EmployeeId.Location = new System.Drawing.Point(115, 367);
+            this.lbl_EmployeeId.Name = "lbl_EmployeeId";
+            this.lbl_EmployeeId.Size = new System.Drawing.Size(113, 23);
+            this.lbl_EmployeeId.TabIndex = 37;
+            this.lbl_EmployeeId.Text = "Employee Id";
             // 
             // btnShowEmployee
             // 
             this.btnShowEmployee.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnShowEmployee.Location = new System.Drawing.Point(387, 365);
+            this.btnShowEmployee.Location = new System.Drawing.Point(406, 363);
             this.btnShowEmployee.Name = "btnShowEmployee";
             this.btnShowEmployee.Size = new System.Drawing.Size(118, 25);
             this.btnShowEmployee.TabIndex = 39;
@@ -434,7 +434,6 @@
             this.cbxAccountsAdmin.Tag = "8";
             this.cbxAccountsAdmin.UseVisualStyleBackColor = true;
             this.cbxAccountsAdmin.CheckedChanged += new System.EventHandler(this.cbx_CheckChanged);
-            
             // 
             // ctrlDetailedUsers
             // 
@@ -456,7 +455,7 @@
             this.Controls.Add(this.cbxEmployeesRO);
             this.Controls.Add(this.cbxAccountsRO);
             this.Controls.Add(this.cbxClientsRO);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbl_EmployeeId);
             this.Controls.Add(this.lblEmployeeId);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -476,7 +475,6 @@
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblId);
-            
             this.MaximumSize = new System.Drawing.Size(643, 750);
             this.MinimumSize = new System.Drawing.Size(643, 450);
             this.Name = "ctrlDetailedUsers";
@@ -486,7 +484,7 @@
 
         }
 
-        public void IntializeCtrl()
+        private void IntializeCtrl()
         {
             this.ctrlDetailedEmployee1 = new PL_WinForm.User_Controls.Details_Presenter.ctrlDetailedEmployee();
 
@@ -502,6 +500,21 @@
             this.ctrlDetailedEmployee1.UpdateService = null;
             
             this.Controls.Add(this.ctrlDetailedEmployee1);
+        }
+
+        private void IntializecbEmployees ()
+        {
+            this.cbEmployees = new System.Windows.Forms.ComboBox();
+            
+            // 
+            // cbEmployees
+            // 
+            this.cbEmployees.Location = new System.Drawing.Point(316, 365);
+            this.cbEmployees.Name = "cbEmployees";
+            this.cbEmployees.Size = new System.Drawing.Size(153, 20);
+            this.cbEmployees.TabIndex = 42;
+
+            this.Controls.Add(this.cbEmployees);
         }
         #endregion
 
@@ -537,9 +550,10 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblEmployeeId;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_EmployeeId;
         private System.Windows.Forms.Button btnShowEmployee;
         private ctrlDetailedEmployee ctrlDetailedEmployee1;
         private System.Windows.Forms.CheckBox cbxAccountsAdmin;
+        private System.Windows.Forms.ComboBox cbEmployees;
     }
 }

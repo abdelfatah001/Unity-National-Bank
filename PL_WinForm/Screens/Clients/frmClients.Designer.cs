@@ -45,6 +45,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 660);
             this.Controls.Add(this.ctrlClientManager1);
+            this.IsMdiContainer = true;
             this.Name = "frmClients";
             this.Text = "frmClients";
             this.ResumeLayout(false);

@@ -22,7 +22,14 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdateService.SaveUpdates();
+            if (_view == enView.Update)
+                UpdateService.SaveUpdates();
+
+            else
+            {
+                SelectedRecord = AddService.ReturnFilledObject();
+                AddService.SaveUpdates();
+            }
             Cancel(e);
         }
 

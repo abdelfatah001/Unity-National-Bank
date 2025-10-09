@@ -41,4 +41,7 @@ C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinFor
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.csproj.Up2Date
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.exe
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.pdb
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Users.frmAddUser.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Clients.frmAddClients.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Employees.frmAddEmployee.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.exe.config

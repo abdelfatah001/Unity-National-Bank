@@ -16,10 +16,15 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         private void LockUpdate()
         {
             ctrlDetailedPerson1.LockUpdate();
-
             txtSalary.ReadOnly = true;
+        }
+
+
+        private void ConvertConboBoxToReadOnly ()
+        {
             cbDepartments.Enabled = false;
             cbManager.Enabled = false;
+            ctrlDetailedPerson1.ConvertComboBoxToReadOnly();
         }
 
         private void DelockUpdate()
@@ -92,6 +97,19 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             cbManager.Location = new System.Drawing.Point(155, 267);
         }
 
+        private void lblEmployeeIdToAddEmployee ()
+        {
+            lblId.Visible = false;
+            lblEmployeeId.Size = new System.Drawing.Size(175, 23);
+            lblEmployeeId.Text = "Add Employee";
+            lblEmployeeId.Location = new System.Drawing.Point(250, 15);
+        }
+
+        private void AddMode()
+        {
+            DisappearShowManagerBtn();
+            lblEmployeeIdToAddEmployee();
+        }
 
         private void ReadOnlyMode()
         {

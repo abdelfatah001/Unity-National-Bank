@@ -9,12 +9,12 @@ using System.Windows.Forms;
 
 namespace PL_WinForm.User_Controls.Details_Presenter.Account
 {
-    internal class clsAccountUpdateService : clsUpdateService<clsAccount>
+    internal class clsUpdateAccountService : clsUpdateService<clsAccount>
     {
         private ComboBox _cbAccountStatus;
 
 
-        public clsAccountUpdateService(clsAccount account, IEntity<clsAccount> accountEntity, ComboBox cbAccountStatus)
+        public clsUpdateAccountService(IEntity<clsAccount> accountEntity, clsAccount account, ComboBox cbAccountStatus)
            :  base (accountEntity, account)
         {
             _cbAccountStatus = cbAccountStatus;
@@ -66,7 +66,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
         }
     }
 
-    internal class clsAccountAddService : clsAddService<clsAccount>
+    internal class clsAddAccountService : clsAddService<clsAccount>
     {
 
         ComboBox cbAcctStatus;
@@ -81,7 +81,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         private IEntity<clsClient> _clientEntity;
 
-        public clsAccountAddService(IEntity<clsAccount> accEntity, IEntity<clsClient> clientEntity, IReadOnlyEntity<clsCurrency> currencyEntity, ref clsAccount recordToAdd, ComboBox cbAccountStatus, ComboBox cbClientsList, ComboBox cbCurrenciesList)
+        public clsAddAccountService(IEntity<clsAccount> accEntity, ref clsAccount recordToAdd, IEntity<clsClient> clientEntity, IReadOnlyEntity<clsCurrency> currencyEntity, ComboBox cbAccountStatus, ComboBox cbClientsList, ComboBox cbCurrenciesList)
                 : base (accEntity, ref recordToAdd)
         {
             cbAcctStatus = cbAccountStatus;
@@ -93,7 +93,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             _currencyEntity = currencyEntity;
         }
 
-        protected override void FillObjectData()
+        protected override void FillObject()
         {
             if (cbAcctStatus.Text == "" || cbClients.Text == "" || cbCurrencies.Text == "")
             {
@@ -102,34 +102,30 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
                 return;
             }
 
-            operation = enAddingOprtn.Adding;
+            operation = enAddingOprtn.Add;
 
             _recordToAdd = new clsAccount();
 
-            _recordToAdd.Balance = 0;
-            _recordToAdd.CreatedDate = DateTime.Now;
-
-            _recordToAdd.Status = (clsAccount.enAccountStatus)(cbAcctStatus.SelectedIndex + 1);
-
-
-            string currencyCode = (cbCurrencies.Text.Split('-')[0].Trim());
+            clsAccount.enAccountStatus status = (clsAccount.enAccountStatus)(cbAcctStatus.SelectedIndex + 1);
 
             List<clsCurrency> currencies = _currencyEntity.LoadData();
 
-            foreach (clsCurrency currency in currencies)
-                if (currency.Code == currencyCode)  _recordToAdd.currency = currency;
+            string currencyCode = (cbCurrencies.Text.Split('-')[0].Trim());
 
+            clsCurrency currency = new clsCurrency();
+
+            foreach (clsCurrency cur in currencies)
+                if (cur.Code == currencyCode)  currency = cur;
 
 
             short ownerClientId = Convert.ToInt16(cbClients.Text.Split('-')[0].Trim());
 
-            List<clsClient> clients = _clientEntity.LoadData();
+            clsClient client = _clientEntity.Get(ownerClientId);
 
-            foreach (clsClient client in clients)
-                if (client.Id == ownerClientId)  _recordToAdd.client = client;
+
+            _recordToAdd.Update(0, DateTime.Now, client, currency, status);  
 
             GenerateAccountName();
-
 
         }
 
@@ -147,15 +143,21 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         }
 
-
-        public override void Add()
+        public override void SaveUpdates()
         {
-            FillObjectData();
-            InsertInternal();
+
+            enAddingOprtn processStatus  = ((ISave<enAddingOprtn>)this).Save();
+
+            if (processStatus == enAddingOprtn.Canceled)
+                return;
+
+            if (processStatus == enAddingOprtn.Add)
+                MessageBox.Show("account updated successfully");
+
+            else
+                MessageBox.Show("account update failed");
+
         }
-
-
-
     }
 
 }

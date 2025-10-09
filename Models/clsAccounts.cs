@@ -27,13 +27,14 @@ namespace Models
         {
             currency = new clsCurrency();
         }
-        public clsAccount(short Id, double Balance, DateTime CreatedDate, clsClient Client, clsCurrency Currency)
+
+        public void Update(double Balance, DateTime CreatedDate, clsClient Client, clsCurrency Currency, enAccountStatus status)
         {
-            this.Id = Id;
             this.Balance = Balance;
             this.CreatedDate = CreatedDate;
             this.client = Client;
             this.currency = Currency;
+            this.Status = status;
         }
 
      

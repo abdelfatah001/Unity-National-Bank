@@ -40,8 +40,8 @@
             this.txtSalary = new System.Windows.Forms.TextBox();
             this.cbManager = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbBack = new System.Windows.Forms.PictureBox();
             this.ctrlDetailedPerson1 = new PL_WinForm.User_Controls.Details_Presenter.ctrlDetailedPerson();
+            this.pbBack = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.SuspendLayout();
@@ -97,7 +97,7 @@
             // 
             this.cbDepartments.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDepartments.FormattingEnabled = true;
-            this.cbDepartments.Location = new System.Drawing.Point(156, 209);
+            this.cbDepartments.Location = new System.Drawing.Point(157, 210);
             this.cbDepartments.Name = "cbDepartments";
             this.cbDepartments.Size = new System.Drawing.Size(135, 21);
             this.cbDepartments.TabIndex = 23;
@@ -106,7 +106,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(26, 209);
+            this.label7.Location = new System.Drawing.Point(16, 210);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(106, 23);
             this.label7.TabIndex = 22;
@@ -116,7 +116,7 @@
             // 
             this.Label5.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Label5.Location = new System.Drawing.Point(341, 212);
+            this.Label5.Location = new System.Drawing.Point(342, 210);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(95, 23);
             this.Label5.TabIndex = 20;
@@ -145,7 +145,7 @@
             // 
             // txtSalary
             // 
-            this.txtSalary.Location = new System.Drawing.Point(464, 212);
+            this.txtSalary.Location = new System.Drawing.Point(462, 211);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(135, 20);
             this.txtSalary.TabIndex = 27;
@@ -179,6 +179,15 @@
             this.panel1.Size = new System.Drawing.Size(643, 339);
             this.panel1.TabIndex = 30;
             // 
+            // ctrlDetailedPerson1
+            // 
+            this.ctrlDetailedPerson1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ctrlDetailedPerson1.Location = new System.Drawing.Point(0, 53);
+            this.ctrlDetailedPerson1.Name = "ctrlDetailedPerson1";
+            this.ctrlDetailedPerson1.SelectedRecord = null;
+            this.ctrlDetailedPerson1.Size = new System.Drawing.Size(640, 151);
+            this.ctrlDetailedPerson1.TabIndex = 30;
+            // 
             // pbBack
             // 
             this.pbBack.Image = global::PL_WinForm.Properties.Resources.backk;
@@ -191,15 +200,6 @@
             this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
             this.pbBack.MouseEnter += new System.EventHandler(this.pbBack_MouseEnter);
             this.pbBack.MouseLeave += new System.EventHandler(this.pbBack_MouseLeave);
-            // 
-            // ctrlDetailedPerson1
-            // 
-            this.ctrlDetailedPerson1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ctrlDetailedPerson1.Location = new System.Drawing.Point(0, 53);
-            this.ctrlDetailedPerson1.Name = "ctrlDetailedPerson1";
-            this.ctrlDetailedPerson1.SelectedRecord = null;
-            this.ctrlDetailedPerson1.Size = new System.Drawing.Size(640, 151);
-            this.ctrlDetailedPerson1.TabIndex = 30;
             // 
             // ctrlDetailedEmployee
             // 

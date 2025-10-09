@@ -79,7 +79,7 @@ namespace PL_WinForm.Tempelete
     /// <summary>
     /// interface for add client record form
     /// </summary>
-    public interface IAddlientScreen : IAddRecordScreen<clsClient> { }
+    public interface IAddClientScreen : IAddRecordScreen<clsClient> { }
 
     /// <summary>
     /// interface for add employee record form

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ctrlDetailedUsers1 = new PL_WinForm.User_Controls.Details_Presenter.User.ctrlDetailedUsers(User_Controls.Details_Presenter.enView.Show);
+            this.ctrlDetailedUsers1 = new PL_WinForm.User_Controls.Details_Presenter.User.ctrlDetailedUsers();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 

@@ -64,7 +64,6 @@ namespace BLL_BankManagment
             }
             catch (Exception ex) { throw ex; }
 
-            client.Id = Id;
             return (Id != -1);
         }
 

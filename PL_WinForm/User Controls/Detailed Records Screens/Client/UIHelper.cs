@@ -10,11 +10,6 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 {
     partial class ctrlDetailedClient
     {
-        private void LockUpdate()
-        {
-            cbStatus.Enabled = false;
-        }
-
         private void DisappearEmployeeId ()
         {
             lblId.Visible = false;
@@ -29,7 +24,6 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
         private void ReadOnlyMode()
         {
-            LockUpdate();
             DisappearEmployeeId();
             DisapppearCloseButtons();
         }
@@ -37,6 +31,17 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         public bool IsVisible ()
         {
             return lblClientId.Visible;
+        }
+
+        private void DisappearJoinDate ()
+        {
+            lblJoinDate.Visible = false;
+            lbl_JoinDate.Visible = false;
+        }
+
+        private void AddMode()
+        {
+            DisappearJoinDate();
         }
 
     }

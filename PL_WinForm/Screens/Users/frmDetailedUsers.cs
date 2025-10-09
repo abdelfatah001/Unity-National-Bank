@@ -37,7 +37,7 @@ namespace PL_WinForm.Screens.Users
 
         void IAddRecordScreen<clsUser>.ReintializeCtrl (clsUser user)
         {
-            ctrlDetailedUsers1.Reintialize(user,
+            ctrlDetailedUsers1.Reintialize(User_Controls.Details_Presenter.enView.Update, user,
                 new clsUserEntity(new clsUserManager(new clsUserCache(), new clsUserRepo(new clsUsersRepository(new clsEmployeesRepository(new clsPersonRepository()))))),
                  new clsEmployeeEntity(new clsEmployeeManager(new clsEmployeeCache(), new clsEmployeeRepo(new clsEmployeesRepository(new clsPersonRepository())))),
                 new clsPersonEntity(new clsPersonManager(new clsPersonCache(), new clsPersonRepo(new clsPersonRepository()))),
@@ -46,11 +46,17 @@ namespace PL_WinForm.Screens.Users
             ctrlDetailedUsers1.OnCancel += CtrlDetailedUsers1_OnCancel;
         }
 
-        private void CtrlDetailedUsers1_OnCancel(object sender, EventArgs e)
+        private void Cancel()
         {
             IsOpened = false;
-            ((IDetailedUserScreen)this).SendObjToShowMenu();
             this.Close();
+        }
+
+
+        private void CtrlDetailedUsers1_OnCancel(object sender, EventArgs e)
+        {
+            ((IDetailedUserScreen)this).SendObjToShowMenu();
+            Cancel();
         }
 
         void IAddRecordScreen<clsUser>.SendObjToShowMenu ()

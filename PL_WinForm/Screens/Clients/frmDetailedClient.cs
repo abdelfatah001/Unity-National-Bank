@@ -38,13 +38,14 @@ namespace PL_WinForm.Screens.Clients
 
         void IAddRecordScreen<clsClient>.ReintializeCtrl(clsClient client)
         {
-            ctrlDetailedClient1.Reintialize(client
+            ctrlDetailedClient1.Reintialize(enView.Update, client
                 , new clsClientEntity
                     (new clsClientManager(new clsClientCache(), new clsClientRepo(new clsClientsRepository(new clsPersonRepository()))))
                 , new clsPersonEntity(new clsPersonManager(new clsPersonCache(), new clsPersonRepo(new clsPersonRepository()))),
                 new clsCountryEntity(new clsCountriesManager(new clsCountriesCache(), new clsCountriesRepo(new clsCountriesRepository()))));
 
             ctrlDetailedClient1.Dock = DockStyle.Fill;
+
             ctrlDetailedClient1.OnCancel += ctrlDetailedClient1_OnCancel;
 
         }
@@ -55,11 +56,16 @@ namespace PL_WinForm.Screens.Clients
                 DataBack?.Invoke(this, _indexInMenu, ctrlDetailedClient1.SelectedRecord);
         }
 
-        private void ctrlDetailedClient1_OnCancel(object sender, EventArgs e)
+        private void Cancel()
         {
             IsOpened = false;
-            ((IDetailedScreen<clsClient>)this).SendObjToShowMenu();
             this.Close();
+        }
+
+        private void ctrlDetailedClient1_OnCancel(object sender, EventArgs e)
+        {
+            ((IDetailedScreen<clsClient>)this).SendObjToShowMenu();
+            Cancel();
         }
 
         private void frmDetailedClient_FormClosed(object sender, FormClosedEventArgs e)

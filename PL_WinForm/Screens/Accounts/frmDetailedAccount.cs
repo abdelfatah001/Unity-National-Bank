@@ -41,7 +41,7 @@ namespace PL_WinForm.Screens.Accounts
 
         void IAddRecordScreen<clsAccount>.ReintializeCtrl(clsAccount acc)
         {
-            ctrlDetailedAccounts1.Reintialize(User_Controls.Details_Presenter.enView.Show, acc,
+            ctrlDetailedAccounts1.Reintialize(User_Controls.Details_Presenter.enView.Update, acc,
                 new clsAccountEntity(new clsAccountManager(new clsAccountCache(), new clsAccountRepo(new clsAccountsRepository(new clsClientsRepository(new clsPersonRepository()))))),
                 new clsClientEntity(new clsClientManager(new clsClientCache(), new clsClientRepo(new clsClientsRepository(new clsPersonRepository())))),
                 new clsPersonEntity(new clsPersonManager(new clsPersonCache(), new clsPersonRepo(new clsPersonRepository()))),
@@ -51,7 +51,7 @@ namespace PL_WinForm.Screens.Accounts
             ctrlDetailedAccounts1.OnCancel += CtrlDetailedAccounts1_OnCancel;
         }
 
-        private void Cancel(object sender, EventArgs e)
+        private void Cancel()
         {
             IsOpened = false;
             this.Close();
@@ -60,7 +60,7 @@ namespace PL_WinForm.Screens.Accounts
         private void CtrlDetailedAccounts1_OnCancel(object sender, EventArgs e)
         {
             ((IDetailedAccountScreen)this).SendObjToShowMenu();
-            Cancel(sender, e ); 
+            Cancel( ); 
         }
 
        

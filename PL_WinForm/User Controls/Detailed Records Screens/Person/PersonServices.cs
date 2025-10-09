@@ -6,10 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace PL_WinForm.User_Controls.Details_Presenter.Person
 {
-    public class clsPersonpdateService : clsUpdateService<clsPerson>
+    public class clUpdatesPersonService : clsUpdateService<clsPerson>
     {
 
         private TextBox _txtFirstName;
@@ -18,7 +20,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
         private TextBox _txtPhone;
         private ComboBox _cbCountries;
 
-        public clsPersonpdateService (IInvisibleEntity<clsPerson> personEntity, clsPerson person, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries)
+        public clUpdatesPersonService (IInvisibleEntity<clsPerson> personEntity, clsPerson person, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries)
             : base (personEntity, person) 
         {
             _txtFirstName = txtFirstName;
@@ -43,15 +45,9 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
 
         protected override void UpdateObject()
         {
-            _record.FirstName = _txtFirstName.Text;
-            _record.LastName = _txtLastName.Text;
-            _record.Email = _txtEmail.Text;
-            _record.Phone = _txtPhone.Text;
+            clsCountry country = new clsCountry((short)(_cbCountries.SelectedIndex + 1), _cbCountries.Text);
 
-            if (_cbCountries.SelectedIndex != -1) // if country changed cuz if it doen't the selected index will be -1
-                _record.Country.Id = (short)(_cbCountries.SelectedIndex + 1);
-
-            _record.Country.Name = _cbCountries.Text;
+            _record.Update(_txtFirstName.Text, _txtLastName.Text, country, _txtEmail.Text, _txtPhone.Text);
         }
 
         public enDataUpdated Save()
@@ -75,4 +71,66 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
         }
 
     }
+
+    public class clsAddPersonService
+    {
+
+        IInvisibleEntity<clsPerson> _PersonEntity;
+
+        private TextBox _txtFirstName;
+        private TextBox _txtLastName;
+        private TextBox _txtEmail;
+        private TextBox _txtPhone;
+        private ComboBox _cbCountries;
+        private DateTimePicker _dtpDateOfBirth;
+
+        private clsPerson _person;
+
+        private bool DataChanged { get; set; } = false;
+
+        protected enAddingOprtn operation = enAddingOprtn.Canceled;
+
+
+        public clsAddPersonService(IInvisibleEntity<clsPerson> personEntity, clsPerson person, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries, DateTimePicker dtpDateOfBirth)
+        {
+            _PersonEntity = personEntity;
+            _txtFirstName = txtFirstName;
+            _txtLastName = txtLastName;
+            _txtEmail = txtEmail;
+            _txtPhone = txtPhone;
+            _cbCountries = cbCountries; 
+            _dtpDateOfBirth = dtpDateOfBirth;   
+
+            _person = person;
+        }
+
+        private void FillPersonObject ()
+        {
+            if (_txtFirstName.Text == "" || _txtLastName.Text == "" || _txtEmail.Text == "" || _txtPhone.Text == "" || _cbCountries .Text == "")
+            {
+                MessageBox.Show("Nothing to add");
+                operation = enAddingOprtn.Canceled;
+                return;
+            }
+
+            operation = enAddingOprtn.Add;
+
+            clsCountry country = new clsCountry((short)(_cbCountries.SelectedIndex + 1), _cbCountries.Text);
+
+            _person = new clsPerson(_txtFirstName.Text, _txtLastName.Text, _dtpDateOfBirth.Value, country, _txtEmail.Text, _txtPhone.Text);
+        }
+
+        public clsPerson AddPerson ()
+        {
+
+            FillPersonObject();
+
+            if (operation == enAddingOprtn.Canceled) return null;
+
+            if (_PersonEntity.Add(ref _person)) return _person;
+
+            else return null;
+        }
+    }
+
 }

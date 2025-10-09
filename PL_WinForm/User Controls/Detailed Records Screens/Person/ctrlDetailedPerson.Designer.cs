@@ -1,4 +1,6 @@
-﻿namespace PL_WinForm.User_Controls.Details_Presenter
+﻿using System.Windows.Forms;
+
+namespace PL_WinForm.User_Controls.Details_Presenter
 {
     partial class ctrlDetailedPerson
     {
@@ -35,8 +37,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.Label5 = new System.Windows.Forms.Label();
-            this.lblAge = new System.Windows.Forms.Label();
+            this.lbl_Age = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cbCountries = new System.Windows.Forms.ComboBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -54,7 +55,7 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(155, 26);
+            this.txtFirstName.Location = new System.Drawing.Point(157, 26);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(135, 20);
             this.txtFirstName.TabIndex = 1;
@@ -78,7 +79,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(155, 70);
+            this.txtEmail.Location = new System.Drawing.Point(157, 70);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(135, 20);
             this.txtEmail.TabIndex = 5;
@@ -103,25 +104,15 @@
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone";
             // 
-            // Label5
+            // lbl_Age
             // 
-            this.Label5.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Label5.Location = new System.Drawing.Point(27, 112);
-            this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(106, 23);
-            this.Label5.TabIndex = 8;
-            this.Label5.Text = "Age";
-            // 
-            // lblAge
-            // 
-            this.lblAge.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblAge.Location = new System.Drawing.Point(152, 110);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(106, 23);
-            this.lblAge.TabIndex = 9;
-            this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Age.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lbl_Age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl_Age.Location = new System.Drawing.Point(27, 112);
+            this.lbl_Age.Name = "lbl_Age";
+            this.lbl_Age.Size = new System.Drawing.Size(130, 23);
+            this.lbl_Age.TabIndex = 8;
+            this.lbl_Age.Text = "Age";
             // 
             // label7
             // 
@@ -157,8 +148,7 @@
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.cbCountries);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.lblAge);
-            this.Controls.Add(this.Label5);
+            this.Controls.Add(this.lbl_Age);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
@@ -173,6 +163,48 @@
 
         }
 
+        private void IntializeDataPicker ()
+        {
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(157, 112);
+
+            int MaxYear = System.DateTime.Now.Year - 20;
+
+            this.dateTimePicker1.MaxDate = new System.DateTime(MaxYear, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1945, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(135, 20);
+            this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker1.Value = new System.DateTime(2005, 1, 1, 0, 0, 0, 0);
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            this.dateTimePicker1.CustomFormat = "ddd, dd MMM yyyy";
+
+            this.Controls.Add(this.dateTimePicker1);
+
+        }
+
+        private void IntializeAgeLabel ()
+        {
+            this.lblAge = new System.Windows.Forms.Label();
+            
+            // 
+            // lblAge
+            // 
+            this.lblAge.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lblAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblAge.Location = new System.Drawing.Point(152, 110);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(106, 23);
+            this.lblAge.TabIndex = 9;
+            this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            
+            this.Controls.Add(this.lblAge);
+        }  
+
         #endregion
 
         private System.Windows.Forms.Label lblFirstName;
@@ -182,10 +214,11 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.Label Label5;
+        private System.Windows.Forms.Label lbl_Age;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbCountries;
         private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

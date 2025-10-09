@@ -13,7 +13,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
         private void btnShowEmployee_Click(object sender, EventArgs e)
         {
             ShowClientData();
-            btnShowEmployee.Enabled = false;
+            btnShowClient.Enabled = false;
         }
 
         private void Cancel (object sender, EventArgs e)
@@ -23,18 +23,19 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            switch (_View)
+            switch (_view)
             { 
-                case enView.Show : UpdateService.SaveUpdates(); break;
+                case enView.Update : UpdateService.SaveUpdates(); break;
+                    
 
                 case enView.Add :
-                    {
-                        AddService.Add();
-                        SelectedRecord = AddService.ReturnFilledObject();
-                        break;
-                    }
+                {
+                    SelectedRecord = AddService.ReturnFilledObject();
+                    AddService.SaveUpdates();
+                    break;
+                }
             }
-            
+
             Cancel(this, e);
         }
 
