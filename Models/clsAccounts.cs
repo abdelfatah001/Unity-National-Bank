@@ -16,6 +16,7 @@ namespace Models
 
         public short Id { get; set; }
         public string AccountName {  get; set; }
+        public string Password { get; set; }
         public double Balance { get; set; }
         public DateTime CreatedDate { get; set; }
         public enAccountStatus Status { get; set; }

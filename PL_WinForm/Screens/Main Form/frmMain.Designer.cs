@@ -103,29 +103,28 @@ namespace PL.MainForm
             // 
             // pnlMainScreen
             // 
+            this.pnlMainScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMainScreen.BackColor = System.Drawing.SystemColors.Control;
             this.pnlMainScreen.BackgroundImage = global::PL_WinForm.Properties.Resources.UNBwithoutbg;
             this.pnlMainScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pnlMainScreen.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlMainScreen.Location = new System.Drawing.Point(188, 0);
-            this.pnlMainScreen.MaximumSize = new System.Drawing.Size(820, 658);
-            this.pnlMainScreen.MinimumSize = new System.Drawing.Size(689, 658);
             this.pnlMainScreen.Name = "pnlMainScreen";
             this.pnlMainScreen.Size = new System.Drawing.Size(689, 658);
             this.pnlMainScreen.TabIndex = 3;
             // 
             // pnlSideBar
             // 
-            this.pnlSideBar.BackColor = System.Drawing.Color.CadetBlue;
+            this.pnlSideBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pnlSideBar.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.pnlSideBar.Controls.Add(this.pnlUsername);
             this.pnlSideBar.Controls.Add(this.pbSideBarDrawer);
             this.pnlSideBar.Controls.Add(this.pnlLogout);
             this.pnlSideBar.Controls.Add(this.pnlDateTime);
             this.pnlSideBar.Controls.Add(this.flpList);
-            this.pnlSideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSideBar.Location = new System.Drawing.Point(0, 0);
-            this.pnlSideBar.MaximumSize = new System.Drawing.Size(187, 658);
-            this.pnlSideBar.MinimumSize = new System.Drawing.Size(53, 658);
             this.pnlSideBar.Name = "pnlSideBar";
             this.pnlSideBar.Size = new System.Drawing.Size(187, 658);
             this.pnlSideBar.TabIndex = 2;
@@ -200,7 +199,7 @@ namespace PL.MainForm
             // lblLogout
             // 
             this.lblLogout.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogout.ForeColor = System.Drawing.Color.LightGray;
+            this.lblLogout.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblLogout.Location = new System.Drawing.Point(50, 4);
             this.lblLogout.Name = "lblLogout";
             this.lblLogout.Size = new System.Drawing.Size(134, 37);
@@ -283,7 +282,7 @@ namespace PL.MainForm
             // 
             // pnlHome
             // 
-            this.pnlHome.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.pnlHome.BackColor = System.Drawing.Color.Transparent;
             this.pnlHome.Controls.Add(this.pbHome);
             this.pnlHome.Controls.Add(this.lblHome);
             this.pnlHome.Location = new System.Drawing.Point(3, 3);
@@ -306,8 +305,9 @@ namespace PL.MainForm
             // 
             // lblHome
             // 
+            this.lblHome.BackColor = System.Drawing.Color.Transparent;
             this.lblHome.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblHome.ForeColor = System.Drawing.Color.LightGray;
+            this.lblHome.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblHome.Location = new System.Drawing.Point(44, 4);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(140, 37);
@@ -343,7 +343,7 @@ namespace PL.MainForm
             // lblAccounts
             // 
             this.lblAccounts.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblAccounts.ForeColor = System.Drawing.Color.LightGray;
+            this.lblAccounts.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblAccounts.Location = new System.Drawing.Point(44, 4);
             this.lblAccounts.Name = "lblAccounts";
             this.lblAccounts.Size = new System.Drawing.Size(140, 37);
@@ -379,7 +379,7 @@ namespace PL.MainForm
             // lblClients
             // 
             this.lblClients.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblClients.ForeColor = System.Drawing.Color.LightGray;
+            this.lblClients.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblClients.Location = new System.Drawing.Point(44, 4);
             this.lblClients.Name = "lblClients";
             this.lblClients.Size = new System.Drawing.Size(140, 37);
@@ -415,7 +415,7 @@ namespace PL.MainForm
             // lblUsers
             // 
             this.lblUsers.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblUsers.ForeColor = System.Drawing.Color.LightGray;
+            this.lblUsers.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblUsers.Location = new System.Drawing.Point(44, 4);
             this.lblUsers.Name = "lblUsers";
             this.lblUsers.Size = new System.Drawing.Size(140, 37);
@@ -451,7 +451,7 @@ namespace PL.MainForm
             // lblEmployees
             // 
             this.lblEmployees.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblEmployees.ForeColor = System.Drawing.Color.LightGray;
+            this.lblEmployees.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblEmployees.Location = new System.Drawing.Point(44, 4);
             this.lblEmployees.Name = "lblEmployees";
             this.lblEmployees.Size = new System.Drawing.Size(140, 37);
@@ -487,7 +487,7 @@ namespace PL.MainForm
             // lblTransactions
             // 
             this.lblTransactions.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblTransactions.ForeColor = System.Drawing.Color.LightGray;
+            this.lblTransactions.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblTransactions.Location = new System.Drawing.Point(44, 4);
             this.lblTransactions.Name = "lblTransactions";
             this.lblTransactions.Size = new System.Drawing.Size(140, 37);
@@ -523,7 +523,7 @@ namespace PL.MainForm
             // lblRegisterations
             // 
             this.lblRegisterations.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblRegisterations.ForeColor = System.Drawing.Color.LightGray;
+            this.lblRegisterations.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblRegisterations.Location = new System.Drawing.Point(44, 4);
             this.lblRegisterations.Name = "lblRegisterations";
             this.lblRegisterations.Size = new System.Drawing.Size(140, 37);
@@ -559,7 +559,7 @@ namespace PL.MainForm
             // lblCurrencies
             // 
             this.lblCurrencies.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblCurrencies.ForeColor = System.Drawing.Color.LightGray;
+            this.lblCurrencies.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblCurrencies.Location = new System.Drawing.Point(44, 4);
             this.lblCurrencies.Name = "lblCurrencies";
             this.lblCurrencies.Size = new System.Drawing.Size(140, 37);
@@ -574,10 +574,13 @@ namespace PL.MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(877, 658);
             this.Controls.Add(this.pnlMainScreen);
             this.Controls.Add(this.pnlSideBar);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(893, 697);
             this.Name = "frmMain";
             this.Text = "Unity National Bank";
             this.pnlSideBar.ResumeLayout(false);

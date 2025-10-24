@@ -13,17 +13,19 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
     {
         private ComboBox _cbAccountStatus;
 
+        TextBox _txtPassword;
 
-        public clsUpdateAccountService(IEntity<clsAccount> accountEntity, clsAccount account, ComboBox cbAccountStatus)
+        public clsUpdateAccountService(IEntity<clsAccount> accountEntity, clsAccount account, ComboBox cbAccountStatus, TextBox txtPass)
            :  base (accountEntity, account)
         {
             _cbAccountStatus = cbAccountStatus;
+            _txtPassword = txtPass;
         }
 
 
         public override bool IsDataChanged()
         {
-            DataChanged = ( (_cbAccountStatus.SelectedIndex + 1) != (int) _record.Status );
+            DataChanged = ( (_cbAccountStatus.SelectedIndex + 1) != (int) _record.Status || _txtPassword.Text != _record.Password);
 
             return DataChanged;
         }
@@ -32,6 +34,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
         protected override void UpdateObject()
         {
             _record.Status = (clsAccount.enAccountStatus) _cbAccountStatus.SelectedIndex + 1;
+            _record.Password = _txtPassword.Text.Trim();
         }
 
 
@@ -75,18 +78,21 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         ComboBox cbCurrencies;
 
+        TextBox _txtPassword;
+
         private IEntity<clsAccount> _accEntity;
 
         private IReadOnlyEntity<clsCurrency> _currencyEntity;
 
         private IEntity<clsClient> _clientEntity;
 
-        public clsAddAccountService(IEntity<clsAccount> accEntity, ref clsAccount recordToAdd, IEntity<clsClient> clientEntity, IReadOnlyEntity<clsCurrency> currencyEntity, ComboBox cbAccountStatus, ComboBox cbClientsList, ComboBox cbCurrenciesList)
+        public clsAddAccountService(IEntity<clsAccount> accEntity, ref clsAccount recordToAdd, IEntity<clsClient> clientEntity, IReadOnlyEntity<clsCurrency> currencyEntity, ComboBox cbAccountStatus, ComboBox cbClientsList, ComboBox cbCurrenciesList, TextBox txtPass)
                 : base (accEntity, ref recordToAdd)
         {
             cbAcctStatus = cbAccountStatus;
             cbClients = cbClientsList;
             cbCurrencies = cbCurrenciesList;
+            _txtPassword = txtPass;
 
             _accEntity = accEntity;
             _clientEntity = clientEntity;
@@ -95,7 +101,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
 
         protected override void FillObject()
         {
-            if (cbAcctStatus.Text == "" || cbClients.Text == "" || cbCurrencies.Text == "")
+            if (cbAcctStatus.Text == "" || cbClients.Text == "" || cbCurrencies.Text == "" || _txtPassword.Text == "")
             {
                 MessageBox.Show("Nothing to add");
                 operation = enAddingOprtn.Canceled;
@@ -105,6 +111,8 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             operation = enAddingOprtn.Add;
 
             _recordToAdd = new clsAccount();
+
+            _recordToAdd.Password = _txtPassword.Text.Trim();
 
             clsAccount.enAccountStatus status = (clsAccount.enAccountStatus)(cbAcctStatus.SelectedIndex + 1);
 

@@ -12,8 +12,9 @@ namespace BLL_BankManagment
 
     public abstract class clsCache<T> : ICache<T>
     {
-        public static List<T> _cacheList = new List<T>();
+        protected static List<T> _cacheList = new List<T>();
 
+        protected static Dictionary<int, T> _cachDict = new Dictionary<int, T>();
 
         public clsCache() { }
 

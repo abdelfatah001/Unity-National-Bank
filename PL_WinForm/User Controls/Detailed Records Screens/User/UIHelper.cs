@@ -63,7 +63,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.User
         private void ShowEmployeeCtrl ()
         {
             ctrlDetailedEmployee1.Visible = true;
-            ctrlDetailedEmployee1.Location = new Point(0, 355);
+            ctrlDetailedEmployee1.Location = new Point(27, 355);
             ctrlDetailedEmployee1.Size = new Size(643, 295);
 
         }

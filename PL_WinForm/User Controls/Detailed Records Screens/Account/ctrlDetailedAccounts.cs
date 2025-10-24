@@ -1,5 +1,6 @@
 ﻿using Models;
 using PL_WinForm.User_Controls.Detailed_Records_Screens.Add_Record;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter.User;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
         public event EventHandler OnCancel;
 
 
+
         public IUpdate UpdateService { get; set; }
 
         public IAdd<clsAccount> AddService { get; set; }
@@ -46,9 +48,9 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
         }
 
      
-        void IReLoadCtrl.ReintializeSubCtrl()
+        void IReLoadCtrl.ReintializeSubCtrl(IPersonValidation personValidation)
         {
-            ctrlDetailedClient1.Reintialize(enView.Show, SelectedRecord.client, _clientEntity, _personEntity, _countryEnity);
+            ctrlDetailedClient1.Reintialize(enView.Show, SelectedRecord.client, _clientEntity, _personEntity, null,_countryEnity);
             ctrlDetailedClient1.Location = new Point(0, 250);
 
         }
@@ -60,6 +62,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             _clientEntity = clienteEntity;
             _currencyEntity = currencyEntity;
 
+
             if (_view == enView.Show)
             {
                 _personEntity = personEntity;
@@ -70,10 +73,10 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             ((IDetailedAccount)this).FillForm();
 
             if (_view == enView.Update)
-                UpdateService = new clsUpdateAccountService(accountEntity, account, cbAccountStatus);
+                UpdateService = new clsUpdateAccountService(accountEntity, account, cbAccountStatus, txtPassword);
 
             else if (_view ==  enView.Add)
-                AddService = new clsAddAccountService(accountEntity, ref account,  clienteEntity, _currencyEntity, cbAccountStatus, cbClients, cbCurrency);
+                AddService = new clsAddAccountService(accountEntity, ref account,  clienteEntity, _currencyEntity, cbAccountStatus, cbClients, cbCurrency, txtPassword);
 
         }
 
@@ -82,7 +85,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             if (_view != enView.Add)
             {
                 IntializeCtrl();
-                ((IDetailedAccount)this).ReintializeSubCtrl();
+                ((IDetailedAccount)this).ReintializeSubCtrl(null);
                 ShowReducedView();
             }
 
@@ -152,6 +155,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Account
             lblCreatedDate.Text = SelectedRecord.CreatedDate.ToString();
             lblClientId.Text = SelectedRecord.client.Id.ToString();
             lblBalance.Text = SelectedRecord.Balance.ToString();
+            txtPassword.Text = SelectedRecord.Password.Trim();
 
             cbCurrency.Items.Add(SelectedRecord.currency.strCurrnecy());
             cbCurrency.SelectedIndex = 0;

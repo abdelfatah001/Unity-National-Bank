@@ -45,3 +45,8 @@ C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinFor
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Clients.frmAddClients.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Employees.frmAddEmployee.resources
 C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.exe.config
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Transactions.frmTransactions.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Transactions.frmDeposit.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Transactions.frmTransfere.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Transactions.frmWithdraw.resources
+C:\Users\Mohamed\source\repos\BankManagmentSystem\PL_WinForm\obj\Debug\PL_WinForm.Screens.Login_Forn.frmLogin.resources

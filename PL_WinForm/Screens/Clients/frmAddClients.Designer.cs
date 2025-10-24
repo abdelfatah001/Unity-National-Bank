@@ -33,6 +33,7 @@
             // 
             // ctrlDetailedClient1
             // 
+            this.ctrlDetailedClient1.AddService = null;
             this.ctrlDetailedClient1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ctrlDetailedClient1.Location = new System.Drawing.Point(-1, -2);
             this.ctrlDetailedClient1.Name = "ctrlDetailedClient1";
@@ -45,6 +46,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(632, 285);
             this.Controls.Add(this.ctrlDetailedClient1);
             this.Name = "frmAddClients";

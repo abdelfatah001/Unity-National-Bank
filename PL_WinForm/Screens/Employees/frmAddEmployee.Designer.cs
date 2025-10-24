@@ -34,6 +34,7 @@
             // 
             // ctrlDetailedEmployee1
             // 
+            this.ctrlDetailedEmployee1.AddService = null;
             this.ctrlDetailedEmployee1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ctrlDetailedEmployee1.Location = new System.Drawing.Point(0, 0);
             this.ctrlDetailedEmployee1.Name = "ctrlDetailedEmployee1";
@@ -46,6 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(645, 341);
             this.Controls.Add(this.ctrlDetailedEmployee1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

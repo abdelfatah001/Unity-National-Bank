@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace BLL_BankManagment
 {
+    /// <summary>
+    /// This function to read only 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class clsReadOnlyManager<T> : IReadOnlyManager<T>
     {
 

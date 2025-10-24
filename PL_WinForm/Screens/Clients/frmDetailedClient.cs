@@ -4,6 +4,7 @@ using DAL.Repository;
 using Models;
 using PL_WinForm.Data_Gathering;
 using PL_WinForm.Tempelete;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,7 @@ namespace PL_WinForm.Screens.Clients
                 , new clsClientEntity
                     (new clsClientManager(new clsClientCache(), new clsClientRepo(new clsClientsRepository(new clsPersonRepository()))))
                 , new clsPersonEntity(new clsPersonManager(new clsPersonCache(), new clsPersonRepo(new clsPersonRepository()))),
+                new clsPersonDataValidation(),
                 new clsCountryEntity(new clsCountriesManager(new clsCountriesCache(), new clsCountriesRepo(new clsCountriesRepository()))));
 
             ctrlDetailedClient1.Dock = DockStyle.Fill;

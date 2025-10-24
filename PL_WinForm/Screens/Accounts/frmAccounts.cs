@@ -29,6 +29,7 @@ namespace PL_WinForm.Accounts
         {
 
         }
+
         public void LoadScreen ()
         {
             InitializeComponent();

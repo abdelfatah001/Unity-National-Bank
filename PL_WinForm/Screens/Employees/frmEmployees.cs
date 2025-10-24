@@ -93,12 +93,15 @@ namespace PL_WinForm.Employees
 
         List<string> IRecordsScreen<clsEmployee>.GetRecordInList(clsEmployee emp)
         {
+            if (emp.Person == null)
+                return new List<string>();
+
            return new List<string>
-                    {
-                       emp.Id.ToString(), emp.Person.FirstName, emp.Person.LastName, emp.Salary.ToString(),
-                        emp.Department.ToString(), emp.ManagerId.ToString(), emp.Person.Age.ToString(),
-                        emp.Person.Country.Name, emp.Person.Phone, emp.Person.Email
-                    };
+           {
+                emp.Id.ToString(), emp.Person.FirstName, emp.Person.LastName, emp.Salary.ToString(),
+                emp.Department.ToString(), emp.ManagerId.ToString(), emp.Person.Age.ToString(),
+                emp.Person.Country.Name, emp.Person.Phone, emp.Person.Email
+           };
 
         }
 

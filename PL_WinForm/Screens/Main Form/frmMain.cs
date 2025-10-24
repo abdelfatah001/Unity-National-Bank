@@ -14,25 +14,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PL_WinForm.Screens;
+using PL_WinForm.Transactions;
 
 
 namespace PL.MainForm
 {
+
     public partial class frmMain : Form
     {
         IScreen _OpenedScreen;
 
         Panel _clickedPanel;
 
+        public enum enSidebarSize { shrinked, Expanded };
+
+        enSidebarSize SidbarSize;
        
         public frmMain()
         {
             InitializeComponent();
-            IntializeSideBarPanelsTag(); 
+            IntializeSideBarPanelsTag();
             CLickPanel(pnlHome); // pnl Home is default to clicked by program running
             StartTimer(); 
-            MaximizeSidebar(); 
-            
+            MaximizeSidebar();
         }
         private void IntializeSideBarPanelsTag()
         {

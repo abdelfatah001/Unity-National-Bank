@@ -36,16 +36,18 @@ namespace PL.MainForm
         {
             // switch th sidebar drawer 
 
-            if (pnlSideBar.Size == pnlSideBar.MaximumSize) 
+            if (SidbarSize == enSidebarSize.Expanded) 
             { // if the sidebar panel maximized minimize it and maximize main panel
-                pnlSideBar.Size = pnlSideBar.MinimumSize;
-                pnlMainScreen.Size = pnlMainScreen.MaximumSize;
+                pnlSideBar.Size = new Size(53, 658);
+                pnlMainScreen.Size = new Size(824, 658);
+                pnlMainScreen.Location = new Point(53, 0);
                 MinimizeSidebar();
             }
             else
             { // vice versa
-                pnlSideBar.Size = pnlSideBar.MaximumSize;
-                pnlMainScreen.Size = pnlMainScreen.MinimumSize;
+                pnlSideBar.Size = new Size(192, 658);
+                pnlMainScreen.Size = new Size(689, 658);
+                pnlMainScreen.Location = new Point(188, 0);
                 MaximizeSidebar();
 
             }
@@ -53,18 +55,18 @@ namespace PL.MainForm
 
         private void pbSideBarDrawer_MouseEnter(object sender, EventArgs e)
         {
-            pbSideBarDrawer.BackColor = Color.DarkGray;
+            pbSideBarDrawer.BackColor = Color.Turquoise;
         }
 
         private void pbSideBarDrawer_MouseLeave(object sender, EventArgs e)
         {
-            pbSideBarDrawer.BackColor = Color.CadetBlue;
+            pbSideBarDrawer.BackColor = Color.MediumTurquoise;
         }
 
         // sidebar components
         private void DeclickClickedPanel()
         {
-            _clickedPanel.BackColor = Color.CadetBlue;
+            _clickedPanel.BackColor = Color.DeepSkyBlue;
             ((clsSideBarLabelTag)(_clickedPanel.Tag)).Declick();
         }
 
@@ -76,6 +78,8 @@ namespace PL.MainForm
             clsSideBarLabelTag panelTag = (clsSideBarLabelTag)pnl.Tag;
             panelTag.IsClicked = true;
             _OpenedScreen = panelTag.screen;
+
+            pnl.BackColor = Color.DarkTurquoise;
             ShowScreen();
         }
 
@@ -88,7 +92,6 @@ namespace PL.MainForm
             Panel pnl = (Panel)((Label)sender).Parent;
 
             CLickPanel(pnl);
-            pnl.BackColor = Color.DeepSkyBlue;
         }
 
         private void OnSideBarPictureBoxClick(object sender, EventArgs e)
@@ -99,14 +102,14 @@ namespace PL.MainForm
 
             Panel pnl = (Panel)((PictureBox)sender).Parent;
             CLickPanel(pnl);
-            pnl.BackColor = Color.DeepSkyBlue;
+            pnl.BackColor = Color.DarkTurquoise;
         }
 
         private void OnSideBarLabel_MouseEnter(object sender, EventArgs e)
         {
             Panel pnl = (Panel)((Label)sender).Parent;
 
-            pnl.BackColor = Color.DeepSkyBlue;
+            pnl.BackColor = Color.DarkTurquoise;
         }
 
         private void OnSideBarLabel_MouseLeave(object sender, EventArgs e)
@@ -116,14 +119,14 @@ namespace PL.MainForm
             if (((clsSideBarLabelTag)(pnl.Tag)).IsClicked)
                 return;
 
-            pnl.BackColor = Color.CadetBlue;
+            pnl.BackColor = Color.DeepSkyBlue;
         }
 
         private void OnSideBarPictureBox_MouseEnter(object sender, EventArgs e)
         {
             Panel pnl = (Panel)((PictureBox)sender).Parent;
 
-            pnl.BackColor = Color.DeepSkyBlue;
+            pnl.BackColor = Color.DarkTurquoise;
         }
 
         private void OnSideBarPictureBox_MouseLeave(object sender, EventArgs e)
@@ -133,7 +136,7 @@ namespace PL.MainForm
             if (((clsSideBarLabelTag)(pnl.Tag)).IsClicked)
                 return;
 
-            pnl.BackColor = Color.CadetBlue;
+            pnl.BackColor = Color.DeepSkyBlue;
         }
 
 
@@ -155,7 +158,7 @@ namespace PL.MainForm
         }
         private void OnLogoutPanel_MouseLeave(object sender, EventArgs e)
         {
-            pnlLogout.BackColor = Color.CadetBlue;
+            pnlLogout.BackColor = Color.DeepSkyBlue;
         }
 
         // Time and date
@@ -169,6 +172,8 @@ namespace PL.MainForm
 
             lblMinute.Visible = true;
             lblHour.Visible = true;
+
+            SidbarSize = enSidebarSize.shrinked;
         }
 
         private void MaximizeSidebar()
@@ -180,9 +185,12 @@ namespace PL.MainForm
 
             lblTime.Visible = true;
             lblDate.Visible = true;
+
+            SidbarSize = enSidebarSize.Expanded;
+
         }
 
-        
+
 
     }
     

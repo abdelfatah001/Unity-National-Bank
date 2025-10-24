@@ -32,6 +32,7 @@ namespace DAL.Repository
             // account data
             account.Id = short.Parse(reader["AccountID"].ToString());
             account.AccountName = (reader["AccountName"]).ToString();
+            account.Password = (reader["Password"]).ToString();
             account.Balance = Convert.ToDouble(reader["Balance"]);
             account.CreatedDate = Convert.ToDateTime(reader["CreatedDate"]);
             account.Status = (clsAccount.enAccountStatus) (Convert.ToInt32(reader["AccountStatusID"]));
@@ -81,12 +82,13 @@ namespace DAL.Repository
             SqlConnection connection = new SqlConnection(DBConnection._connectionString);
 
             string query =
-                @"Insert into Accounts (AccountName, Balance, CreatedDate, ClientID, AccountStatusID, CurrencyID)
-                 Values (@AccountName, @Balance, @CreatedDate, @ClientID, @AccountStatusID, @CurrencyID)
+                @"Insert into Accounts (AccountName, Password, Balance, CreatedDate, ClientID, AccountStatusID, CurrencyID)
+                 Values (@AccountName, @Password, @Balance, @CreatedDate, @ClientID, @AccountStatusID, @CurrencyID)
                  Select SCOPE_IDENTITY()";
 
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@Balance", account.Balance);
+            cmd.Parameters.AddWithValue("@Password", account.Password);
             cmd.Parameters.AddWithValue("@CreatedDate", account.CreatedDate);
             cmd.Parameters.AddWithValue("@ClientID", account.client.Id);
             cmd.Parameters.AddWithValue("@AccountStatusID", Convert.ToInt32(account.Status));
@@ -118,13 +120,15 @@ namespace DAL.Repository
                 @"Update Accounts
                 Set
                     Balance = @Balance,
-                    AccountStatusID = @AccStatus
+                    AccountStatusID = @AccStatus,
+                    Password = @Password
                 Where 
                     AccountID = @ID";
 
 
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@Balance", account.Balance);
+            cmd.Parameters.AddWithValue("@Password", account.Password);
             cmd.Parameters.AddWithValue("@AccStatus", (int) account.Status);
             cmd.Parameters.AddWithValue("@ID", account.Id);
 

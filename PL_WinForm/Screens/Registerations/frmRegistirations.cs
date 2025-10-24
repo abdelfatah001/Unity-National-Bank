@@ -13,6 +13,8 @@ namespace PL_WinForm.Screens
         public bool IsLoaded { get; set; } = false;
         public void ShowScreen() { }
 
+
+
     };
 
 }

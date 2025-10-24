@@ -1,5 +1,6 @@
 ﻿using DAL.Repository;
 using Models;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter.Account;
 using System;
 using System.Collections.Generic;
@@ -76,7 +77,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.User
             if (_view != enView.Add)
             {
                 IntializeCtrl();
-                ((IDetailedUser)this).ReintializeSubCtrl();
+                ((IDetailedUser)this).ReintializeSubCtrl(null);
                 _accessManager = new clsAccessManager(_AccessibilityList, cbxAdmin, lblAccessCode, SelectedRecord.AccessCode);
 
             }
@@ -95,9 +96,9 @@ namespace PL_WinForm.User_Controls.Details_Presenter.User
                     break;
             }
         } 
-        void IReLoadCtrl.ReintializeSubCtrl()
+        void IReLoadCtrl.ReintializeSubCtrl(IPersonValidation personValidation)
         {
-            ctrlDetailedEmployee1.Reintailze(enView.Show, SelectedRecord.Employee, _employeeEntity, _personEntity, _countryEnity);
+            ctrlDetailedEmployee1.Reintailze(enView.Show, SelectedRecord.Employee, _employeeEntity, _personEntity, null, _countryEnity);
         }
 
         void ILoad.FillForm()

@@ -33,19 +33,24 @@
             // 
             // ctrlDetailedEmployee1
             // 
+            this.ctrlDetailedEmployee1.AddService = null;
             this.ctrlDetailedEmployee1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ctrlDetailedEmployee1.Location = new System.Drawing.Point(-2, -1);
             this.ctrlDetailedEmployee1.Name = "ctrlDetailedEmployee1";
-            this.ctrlDetailedEmployee1.Size = new System.Drawing.Size(634, 353);
+            this.ctrlDetailedEmployee1.SelectedRecord = null;
+            this.ctrlDetailedEmployee1.Size = new System.Drawing.Size(634, 356);
             this.ctrlDetailedEmployee1.TabIndex = 0;
+            this.ctrlDetailedEmployee1.UpdateService = null;
             // 
             // frmDetailedEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(630, 352);
             this.Controls.Add(this.ctrlDetailedEmployee1);
             this.Name = "frmDetailedEmployee";
+            this.ShowInTaskbar = false;
             this.Text = "frmDetailedEmployee";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmDetailedEmployee_FormClosed);
             this.ResumeLayout(false);

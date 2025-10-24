@@ -1,5 +1,6 @@
 ﻿using Models;
 using PL_WinForm.User_Controls;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter.Client;
 using PL_WinForm.User_Controls.Details_Presenter.Employee;
 using System;
@@ -38,7 +39,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             InitializeComponent();
         }
 
-        public void Reintialize (enView view, clsClient client, IEntity<clsClient> clientEntity, IInvisibleEntity<clsPerson> personEntity, IReadOnlyEntity<clsCountry> countryEntity)
+        public void Reintialize (enView view, clsClient client, IEntity<clsClient> clientEntity, IInvisibleEntity<clsPerson> personEntity, IPersonValidation personValidation,IReadOnlyEntity<clsCountry> countryEntity)
         {
             _view = view;
 
@@ -46,7 +47,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             _personEntity = personEntity;
             _countryEntity = countryEntity;
 
-            ((IReLoadCtrl)this).ReintializeSubCtrl();
+            ((IReLoadCtrl)this).ReintializeSubCtrl(personValidation);
 
             ((ILoad)this).FillForm();
 
@@ -76,12 +77,23 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         }
 
 
-        void IReLoadCtrl.ReintializeSubCtrl()
+        void IReLoadCtrl.ReintializeSubCtrl(IPersonValidation personValidation)
         {
-            if (_view != enView.Add)
-                ctrlDetailedPerson1.Reintialize(_view, SelectedRecord.Person, _personEntity, _countryEntity);
+            switch (_view)
+            {
+                case enView.Add:
+                    ctrlDetailedPerson1.Reintialize(_view, null, _personEntity, personValidation, _countryEntity);
+                    break;
 
-            else ctrlDetailedPerson1.Reintialize(_view, null, _personEntity, _countryEntity);
+                case enView.Show:
+                    ctrlDetailedPerson1.Reintialize(_view, SelectedRecord.Person, _personEntity, null, _countryEntity);
+                    break;
+
+                case enView.Update:
+                    ctrlDetailedPerson1.Reintialize(_view, SelectedRecord.Person, _personEntity, personValidation, _countryEntity);
+                    break;
+            }
+
 
             ctrlDetailedPerson1.Location = new Point(0, 51);
 

@@ -2,6 +2,7 @@
 using BLL_BankManagment;
 using DAL.Repository;
 using Models;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter.Person;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             InitializeComponent();
         }
 
-        public void Reintialize (enView view, clsPerson person, IInvisibleEntity<clsPerson> personEntity, IReadOnlyEntity<clsCountry> countryEnity)
+        public void Reintialize (enView view, clsPerson person, IInvisibleEntity<clsPerson> personEntity, IPersonValidation personValidation, IReadOnlyEntity<clsCountry> countryEnity)
         {
             SelectedRecord = person;
             _personEntity = personEntity;
@@ -43,12 +44,19 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
 
             ShowViewOf();
+            switch (_view)
+            {
+                case enView.Update:
+                    _UpdateService = new clUpdatesPersonService(personEntity, SelectedRecord, personValidation, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries);
+                    break;
 
-            if (_view == enView.Update)
-                _UpdateService = new clUpdatesPersonService(personEntity, SelectedRecord, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries);
+                case enView.Add:
+                    _AddService = new clsAddPersonService(personEntity, SelectedRecord, personValidation, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries, dateTimePicker1);
+                    break;
 
-            else if (_view == enView.Add)
-                _AddService = new clsAddPersonService(personEntity, SelectedRecord, txtFirstName, txtLastName, txtEmail, txtPhone, cbCountries, dateTimePicker1);
+                case enView.Show: break;
+
+            }
 
             ((ILoad)this).FillForm();
 

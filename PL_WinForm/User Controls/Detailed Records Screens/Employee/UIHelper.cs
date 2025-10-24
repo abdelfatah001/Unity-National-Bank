@@ -93,7 +93,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         {
             btnShowManager.Visible = false;
 
-            lblManagerId.Location = new System.Drawing.Point(29, 267);
+            lblManagerId.Location = new System.Drawing.Point(23, 267);
             cbManager.Location = new System.Drawing.Point(155, 267);
         }
 

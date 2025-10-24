@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 
 namespace PL_WinForm.User_Controls.Details_Presenter.Person
 {
@@ -20,7 +22,11 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
         private TextBox _txtPhone;
         private ComboBox _cbCountries;
 
-        public clUpdatesPersonService (IInvisibleEntity<clsPerson> personEntity, clsPerson person, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries)
+        private IPersonValidation _personValidation;
+
+        private bool IsValidData;
+
+        public clUpdatesPersonService(IInvisibleEntity<clsPerson> personEntity, clsPerson person, IPersonValidation personValidation, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries)
             : base (personEntity, person) 
         {
             _txtFirstName = txtFirstName;
@@ -29,6 +35,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
             _txtPhone = txtPhone;
 
             _cbCountries = cbCountries;
+            _personValidation = personValidation;
         }
 
 
@@ -45,9 +52,35 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
 
         protected override void UpdateObject()
         {
+
+
+            if (!_personValidation.NameValidation(_txtFirstName.Text, _txtLastName.Text))
+            {
+                _personValidation.InvalidName();
+                IsValidData = false;
+                return;
+            }
+
+            if (!_personValidation.PhoneNumValidation(_txtPhone.Text))
+            {
+                _personValidation.InvalidPhone();
+                IsValidData = false;
+                return;
+            }
+
+
+            if (!_personValidation.EmailValidation(_txtEmail.Text))
+            {
+                _personValidation.InvalidEmail();
+                IsValidData = false;
+                return;
+            }
+
+            IsValidData = true;
+
             clsCountry country = new clsCountry((short)(_cbCountries.SelectedIndex + 1), _cbCountries.Text);
 
-            _record.Update(_txtFirstName.Text, _txtLastName.Text, country, _txtEmail.Text, _txtPhone.Text);
+            _record.Update(_personValidation.CaptializeFirstChar(_txtFirstName.Text), _personValidation.CaptializeFirstChar(_txtLastName.Text), country, _txtEmail.Text, _txtPhone.Text);
         }
 
         public enDataUpdated Save()
@@ -56,6 +89,9 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
                 return enDataUpdated.NotChanged;
 
             UpdateObject();
+
+            if (!IsValidData)
+                return enDataUpdated.NotChanged;
 
             bool IsUpdated = _Entity.Update(_record);
 
@@ -88,10 +124,12 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
 
         private bool DataChanged { get; set; } = false;
 
+        private IPersonValidation _personValidation;
+
         protected enAddingOprtn operation = enAddingOprtn.Canceled;
 
 
-        public clsAddPersonService(IInvisibleEntity<clsPerson> personEntity, clsPerson person, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries, DateTimePicker dtpDateOfBirth)
+        public clsAddPersonService(IInvisibleEntity<clsPerson> personEntity, clsPerson person, IPersonValidation personValidation, TextBox txtFirstName, TextBox txtLastName, TextBox txtEmail, TextBox txtPhone, ComboBox cbCountries, DateTimePicker dtpDateOfBirth)
         {
             _PersonEntity = personEntity;
             _txtFirstName = txtFirstName;
@@ -102,22 +140,46 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
             _dtpDateOfBirth = dtpDateOfBirth;   
 
             _person = person;
+            _personValidation = personValidation;
         }
 
-        private void FillPersonObject ()
+        private void FillPersonObject()
         {
-            if (_txtFirstName.Text == "" || _txtLastName.Text == "" || _txtEmail.Text == "" || _txtPhone.Text == "" || _cbCountries .Text == "")
+            if (_txtFirstName.Text == "" || _txtLastName.Text == "" || _txtEmail.Text == "" || _txtPhone.Text == "" || _cbCountries.Text == "")
             {
                 MessageBox.Show("Nothing to add");
-                operation = enAddingOprtn.Canceled;
+                CancelOperation();
                 return;
             }
+
+            if (!_personValidation.NameValidation(_txtFirstName.Text, _txtLastName.Text))
+            {
+                _personValidation.InvalidName();
+                CancelOperation();
+                return;
+            }
+
+            if (!_personValidation.PhoneNumValidation(_txtPhone.Text))
+            {
+                _personValidation.InvalidPhone();
+                CancelOperation();
+                return;
+            }
+           
+
+            if (!_personValidation.EmailValidation(_txtEmail.Text))
+            {
+                _personValidation.InvalidEmail();
+                CancelOperation();
+                return;
+            }
+            
 
             operation = enAddingOprtn.Add;
 
             clsCountry country = new clsCountry((short)(_cbCountries.SelectedIndex + 1), _cbCountries.Text);
 
-            _person = new clsPerson(_txtFirstName.Text, _txtLastName.Text, _dtpDateOfBirth.Value, country, _txtEmail.Text, _txtPhone.Text);
+            _person = new clsPerson(_personValidation.CaptializeFirstChar(_txtFirstName.Text), _personValidation.CaptializeFirstChar(_txtLastName.Text), _dtpDateOfBirth.Value, country, _txtEmail.Text, _txtPhone.Text);
         }
 
         public clsPerson AddPerson ()
@@ -131,6 +193,12 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Person
 
             else return null;
         }
+
+        private void CancelOperation()
+        {
+            operation = enAddingOprtn.Canceled;
+        }
+
     }
 
 }

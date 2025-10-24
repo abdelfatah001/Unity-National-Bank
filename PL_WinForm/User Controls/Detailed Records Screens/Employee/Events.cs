@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,15 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         private void pbBack_Click(object sender, EventArgs e)
         {
             GoBackToEmployee();
+        }
+
+        private void txtSalary_Validating(object sender, CancelEventArgs e)
+        {
+            if (!double.TryParse(txtSalary.Text, out double salary))
+                errorProvider1.SetError(txtSalary, "Enter validate numeric value");
+
+            else
+                errorProvider1.SetError(txtSalary, "");
         }
 
     }

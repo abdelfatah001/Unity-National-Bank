@@ -105,6 +105,9 @@ namespace PL_WinForm.Clients
 
         List<string> IRecordsScreen<clsClient>.GetRecordInList(clsClient client)
         {
+            if (client.Person == null)
+                return new List<string>();
+
             return new List<string>
             { client.Id .ToString(), client.Status.ToString(), client.Person.FirstName, client.Person.LastName, client.JoinData.ToString(),
             client.Person.Phone, client.Person.Email, client.Person.Country.Name, client.Person.Age.ToString() };

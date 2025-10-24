@@ -68,6 +68,11 @@ namespace PL_WinForm
     /// </summary>
     public interface IUserScreen : IRecordsScreen<clsUser> { }
 
+
+    /// <summary>
+    /// this class for manage entity screen reflect upsates on it and open the detailes forms from it
+    /// </summary>
+    /// <typeparam name="T">Y is entity</typeparam>
     public class clsUIEntityScreenManager<T>
     {
         public clsUIEntityScreenManager() { }   

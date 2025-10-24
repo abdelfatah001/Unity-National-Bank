@@ -46,7 +46,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             AssignManager(); // to assign manager of new wmployee will be shown cuz we will need its manager o show it in cbManager
 
 
-            ((IReLoadCtrl)this).ReintializeSubCtrl();
+            ((IReLoadCtrl)this).ReintializeSubCtrl(null);
 
             FillData();
 
@@ -70,7 +70,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         {
             AssignEmployee();
             DeleteManager();
-            ((IReLoadCtrl)this).ReintializeSubCtrl();
+            ((IReLoadCtrl)this).ReintializeSubCtrl(_personValidation);
             FillData();
 
             EnableShowManager();

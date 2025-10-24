@@ -68,7 +68,7 @@ namespace PL_WinForm.Data_Gathering
     /// This class for all operations done on visible record
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class clsEntity<T> : clsInvisibleEntity<T>, IEntity<T>
+    public class clsEntity<T> : clsInvisibleEntity<T>, IEntity<T>
     {
 
         public string _menuName { get; private set; }

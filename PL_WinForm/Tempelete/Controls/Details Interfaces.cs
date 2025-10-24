@@ -1,5 +1,6 @@
 ﻿using Models;
 using PL_WinForm.User_Controls.Detailed_Records_Screens.Add_Record;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter;
 using System;
 using System.Collections.Generic;
@@ -58,7 +59,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
     /// interface to reintailize control of client or employee by constructor to show themom read only mode data instead of designer constructor
     /// used by account and user controls
     /// </summary>
-    public interface IReLoadCtrl { void ReintializeSubCtrl(); } 
+    public interface IReLoadCtrl { void ReintializeSubCtrl(IPersonValidation personValidation); } 
 
     /// <summary>
     /// store the varable of record object

@@ -1,5 +1,6 @@
 ﻿using BLL.Manager;
 using Models;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 using PL_WinForm.User_Controls.Details_Presenter.Employee;
 using PL_WinForm.User_Controls.Details_Presenter.Person;
 using System;
@@ -19,8 +20,8 @@ namespace PL_WinForm.User_Controls.Details_Presenter
     {
         private enView _view;
 
-        public clsEmployee SelectedRecord { get;set; }
-        
+        public clsEmployee SelectedRecord { get; set; }
+
         public event EventHandler OnCancel;
 
         private IEntity<clsEmployee> _employeeEntity;
@@ -33,26 +34,28 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
         public IAdd<clsEmployee> AddService { get; set; }
 
+        private IPersonValidation _personValidation;
+
 
         public ctrlDetailedEmployee()
         {
             InitializeComponent();
         }
 
-        public void Reintailze (enView view, clsEmployee employee, IEntity<clsEmployee> employeeEntity, IInvisibleEntity<clsPerson> personEntity, IReadOnlyEntity<clsCountry> countryEnity)
+        public void Reintailze(enView view, clsEmployee employee, IEntity<clsEmployee> employeeEntity, IInvisibleEntity<clsPerson> personEntity, IPersonValidation personValidation, IReadOnlyEntity<clsCountry> countryEnity)
         {
             _view = view;
 
             _employeeEntity = employeeEntity;
             _personEntity = personEntity;
             _countryEntity = countryEnity;
-
+            _personValidation = personValidation;
 
             if (employee != null)
                 FillEmployeeManager(employee);
 
 
-            ((IReLoadCtrl)this).ReintializeSubCtrl();
+            ((IReLoadCtrl)this).ReintializeSubCtrl(personValidation);
 
             ((ILoad)this).FillForm();
 
@@ -60,19 +63,19 @@ namespace PL_WinForm.User_Controls.Details_Presenter
                 UpdateService = new clsUpdateEmployeeService(employeeEntity, employee, ctrlDetailedPerson1, cbManager, cbDepartments, txtSalary);
 
             else if (_view == enView.Add)
-                AddService = new clsAddEmployeeService(employeeEntity, employee, ctrlDetailedPerson1, cbManager, cbDepartments,txtSalary);
+                AddService = new clsAddEmployeeService(employeeEntity, employee, ctrlDetailedPerson1, cbManager, cbDepartments, txtSalary);
 
             ShowViewOf();
         }
 
-        private void ShowViewOf ()
+        private void ShowViewOf()
         {
             DisappearBackIcon();
 
             switch (_view)
             {
                 case enView.Show:
-                    ReadOnlyMode(); 
+                    ReadOnlyMode();
                     break;
 
                 case enView.Add:
@@ -85,7 +88,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         /// to assign employee managers
         /// </summary>
         /// <param name="emp" the employee to get its manager></param>
-        private void FillEmployeeManager (clsEmployee emp)
+        private void FillEmployeeManager(clsEmployee emp)
         {
             SelectedRecord = emp;
 
@@ -93,19 +96,26 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             if (emp.Manager == null && emp.ManagerId != -1)
             {
                 emp.Manager = _employeeEntity.Get(emp.ManagerId);
-                 //MessageBox.Show("gotcha 1 : " + _employee.Manager.strEmployee());
+                //MessageBox.Show("gotcha 1 : " + _employee.Manager.strEmployee());
             }
         }
 
-        void IReLoadCtrl.ReintializeSubCtrl()
+        void IReLoadCtrl.ReintializeSubCtrl(IPersonValidation personValidation)
         {
+            switch (_view)
+            {
+                case enView.Add:
+                    ctrlDetailedPerson1.Reintialize(_view, null, _personEntity, personValidation, _countryEntity);
+                    break;
 
-            if (_view != enView.Add)
-                ctrlDetailedPerson1.Reintialize(_view, SelectedRecord.Person, _personEntity, _countryEntity);
+                case enView.Show:
+                    ctrlDetailedPerson1.Reintialize(_view, SelectedRecord.Person, _personEntity, null, _countryEntity);
+                    break;
 
-            else
-                ctrlDetailedPerson1.Reintialize(_view, null, _personEntity, _countryEntity);
-
+                case enView.Update:
+                    ctrlDetailedPerson1.Reintialize(_view, SelectedRecord.Person, _personEntity, personValidation, _countryEntity);
+                    break;
+            }
 
             ctrlDetailedPerson1.Location = new Point(0, 59);
         }
@@ -181,7 +191,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
 
             for (short i = 1; i <= 8; i++)
             {
-                cbDepartments.Items.Add((clsEmployee.enDepartments) (i)).ToString();
+                cbDepartments.Items.Add((clsEmployee.enDepartments)(i)).ToString();
             }
         }
 
@@ -190,6 +200,5 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         {
             return ctrlDetailedPerson1._UpdateService.DataChanged;
         }
-
     }
 }

@@ -41,13 +41,14 @@
             this.panel1.Controls.Add(this.ctrlDetailedAccounts1);
             this.panel1.Location = new System.Drawing.Point(-2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(668, 324);
+            this.panel1.Size = new System.Drawing.Size(685, 324);
             this.panel1.TabIndex = 0;
             // 
             // ctrlDetailedAccounts1
             // 
+            this.ctrlDetailedAccounts1.AddService = null;
             this.ctrlDetailedAccounts1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ctrlDetailedAccounts1.Location = new System.Drawing.Point(3, 0);
+            this.ctrlDetailedAccounts1.Location = new System.Drawing.Point(15, -3);
             this.ctrlDetailedAccounts1.MaximumSize = new System.Drawing.Size(643, 570);
             this.ctrlDetailedAccounts1.MinimumSize = new System.Drawing.Size(643, 320);
             this.ctrlDetailedAccounts1.Name = "ctrlDetailedAccounts1";
@@ -60,7 +61,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 325);
+            this.ClientSize = new System.Drawing.Size(684, 325);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDetailedAccount";

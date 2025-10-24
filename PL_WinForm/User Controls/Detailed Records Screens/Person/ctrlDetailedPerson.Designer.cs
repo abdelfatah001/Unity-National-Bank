@@ -30,17 +30,20 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lbl_Age = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cbCountries = new System.Windows.Forms.ComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFirstName
@@ -62,7 +65,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(463, 26);
+            this.txtLastName.Location = new System.Drawing.Point(441, 26);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(135, 20);
             this.txtLastName.TabIndex = 3;
@@ -73,16 +76,9 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             this.lblLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblLastName.Location = new System.Drawing.Point(338, 26);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(106, 23);
+            this.lblLastName.Size = new System.Drawing.Size(97, 23);
             this.lblLastName.TabIndex = 2;
             this.lblLastName.Text = "Last Name";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(157, 70);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(135, 20);
-            this.txtEmail.TabIndex = 5;
             // 
             // lblEmail
             // 
@@ -100,7 +96,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             this.lblPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblPhone.Location = new System.Drawing.Point(338, 70);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(106, 23);
+            this.lblPhone.Size = new System.Drawing.Size(97, 23);
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone";
             // 
@@ -120,7 +116,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label7.Location = new System.Drawing.Point(338, 112);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 23);
+            this.label7.Size = new System.Drawing.Size(97, 23);
             this.label7.TabIndex = 10;
             this.label7.Text = "Country";
             // 
@@ -128,17 +124,28 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             // 
             this.cbCountries.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCountries.FormattingEnabled = true;
-            this.cbCountries.Location = new System.Drawing.Point(463, 112);
+            this.cbCountries.Location = new System.Drawing.Point(441, 112);
             this.cbCountries.Name = "cbCountries";
             this.cbCountries.Size = new System.Drawing.Size(135, 21);
             this.cbCountries.TabIndex = 11;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(157, 73);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(135, 20);
+            this.txtEmail.TabIndex = 12;
+            // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(463, 70);
+            this.txtPhone.Location = new System.Drawing.Point(441, 70);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(135, 20);
-            this.txtPhone.TabIndex = 12;
+            this.txtPhone.TabIndex = 13;
             // 
             // ctrlDetailedPerson
             // 
@@ -146,11 +153,11 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.cbCountries);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbl_Age);
             this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.lblLastName);
@@ -158,6 +165,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter
             this.Controls.Add(this.lblFirstName);
             this.Name = "ctrlDetailedPerson";
             this.Size = new System.Drawing.Size(632, 151);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,14 +219,15 @@ namespace PL_WinForm.User_Controls.Details_Presenter
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lbl_Age;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbCountries;
-        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private ErrorProvider errorProvider1;
+        private TextBox txtPhone;
+        private TextBox txtEmail;
     }
 }

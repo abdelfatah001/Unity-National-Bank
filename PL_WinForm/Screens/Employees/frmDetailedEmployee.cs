@@ -15,6 +15,7 @@ using PL_WinForm.Tempelete;
 using PL_WinForm.Data_Gathering;
 using System.Windows.Forms;
 using PL_WinForm.User_Controls.Details_Presenter;
+using PL_WinForm.User_Controls.Detailed_Records_Screens.Person;
 
 namespace PL_WinForm.Screens.Employees
 {
@@ -40,6 +41,7 @@ namespace PL_WinForm.Screens.Employees
             ctrlDetailedEmployee1.Reintailze(enView.Update, employee,
                 new clsEmployeeEntity(new clsEmployeeManager(new clsEmployeeCache(), new clsEmployeeRepo(new clsEmployeesRepository(new clsPersonRepository())))),
                 new clsPersonEntity(new clsPersonManager(new clsPersonCache(), new clsPersonRepo(new clsPersonRepository()))),
+                new clsPersonDataValidation(),
                 new clsCountryEntity(new clsCountriesManager(new clsCountriesCache(), new clsCountriesRepo(new clsCountriesRepository()))));
 
             ctrlDetailedEmployee1.Dock = DockStyle.Fill;

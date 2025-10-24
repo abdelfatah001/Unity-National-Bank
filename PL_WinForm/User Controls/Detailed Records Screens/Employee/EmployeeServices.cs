@@ -22,6 +22,8 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
 
         private ctrlDetailedPerson _ctrlDetailedPerson1;
 
+        bool IsValidInput;
+
 
 
         public clsUpdateEmployeeService(IEntity<clsEmployee> employeeEntity, clsEmployee employee, ctrlDetailedPerson ctrlDetailedPerson, ComboBox cbManager, ComboBox cbDepartments, TextBox txtSalry) 
@@ -31,6 +33,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
             _cbManager = cbManager;
             _txtSalary = txtSalry;
             _ctrlDetailedPerson1 = ctrlDetailedPerson;
+
         }
 
 
@@ -62,7 +65,16 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
 
         protected override void UpdateObject()
         {
-            _record.Salary = Convert.ToDouble(_txtSalary.Text);
+            double salary;
+            if (!double.TryParse(_txtSalary.Text, out salary))
+                IsValidInput = false;
+
+            else
+            {
+                IsValidInput = true;
+                _record.Salary = salary;
+            }
+
             _record.Department = (clsEmployee.enDepartments)_cbDepartments.SelectedIndex + 1;
 
             if (_cbManager.SelectedIndex != 0)
@@ -87,6 +99,14 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
 
         public override void SaveUpdates()
         {
+            if (!IsValidInput) 
+            {
+                MessageBox.Show("Operation failed : Invalid salary");
+                return;
+            }
+
+                
+
             enDataUpdated PersonUpdating = enDataUpdated.NotChanged;
 
             enDataUpdated EmployeeUpdating = enDataUpdated.NotChanged;
@@ -145,7 +165,7 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
             if (_cbDepartments.Text == "" || _cbManager.Text == "" || _txtSalary.Text == "")
             {
                 MessageBox.Show("Nothing to add");
-                operation = enAddingOprtn.Canceled;
+                CancelOperation();
                 return;
             }
 
@@ -171,8 +191,18 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
             else
                 Manager = null;
 
-            _recordToAdd.Update(Convert.ToDouble(_txtSalary.Text), 
-                (enDepartments) (_cbDepartments.SelectedIndex + 1), null, Manager);
+            double salary;
+
+            if (!double.TryParse(_txtSalary.Text, out salary))
+            {
+                MessageBox.Show("Operation failed : Invalid salary input");
+                CancelOperation();
+                return;
+            }
+
+            _recordToAdd.Update(salary,
+                (enDepartments)(_cbDepartments.SelectedIndex + 1), null, Manager);
+            
         }
 
 
@@ -202,6 +232,11 @@ namespace PL_WinForm.User_Controls.Details_Presenter.Employee
             else
                 MessageBox.Show("employee adding failed");
 
+        }
+
+        private void CancelOperation ()
+        {
+            operation = enAddingOprtn.Canceled;
         }
 
 

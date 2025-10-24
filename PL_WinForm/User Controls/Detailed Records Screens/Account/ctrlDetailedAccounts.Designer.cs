@@ -45,13 +45,15 @@
             this.lblCreatedDate = new System.Windows.Forms.Label();
             this.cbCurrency = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Label3
             // 
             this.Label3.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Label3.Location = new System.Drawing.Point(363, 78);
+            this.Label3.Location = new System.Drawing.Point(330, 78);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(106, 23);
             this.Label3.TabIndex = 15;
@@ -97,7 +99,7 @@
             // 
             this.lblAccountName.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblAccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblAccountName.Location = new System.Drawing.Point(170, 75);
+            this.lblAccountName.Location = new System.Drawing.Point(174, 75);
             this.lblAccountName.Name = "lblAccountName";
             this.lblAccountName.Size = new System.Drawing.Size(127, 23);
             this.lblAccountName.TabIndex = 39;
@@ -117,7 +119,7 @@
             // 
             this.cbAccountStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAccountStatus.FormattingEnabled = true;
-            this.cbAccountStatus.Location = new System.Drawing.Point(162, 134);
+            this.cbAccountStatus.Location = new System.Drawing.Point(463, 131);
             this.cbAccountStatus.Name = "cbAccountStatus";
             this.cbAccountStatus.Size = new System.Drawing.Size(135, 21);
             this.cbAccountStatus.TabIndex = 42;
@@ -126,7 +128,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(22, 135);
+            this.label7.Location = new System.Drawing.Point(323, 131);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 23);
             this.label7.TabIndex = 41;
@@ -146,7 +148,7 @@
             // btnShowClient
             // 
             this.btnShowClient.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnShowClient.Location = new System.Drawing.Point(404, 241);
+            this.btnShowClient.Location = new System.Drawing.Point(437, 240);
             this.btnShowClient.Name = "btnShowClient";
             this.btnShowClient.Size = new System.Drawing.Size(118, 25);
             this.btnShowClient.TabIndex = 50;
@@ -158,7 +160,7 @@
             // 
             this.lbl_ClientId.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lbl_ClientId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbl_ClientId.Location = new System.Drawing.Point(95, 247);
+            this.lbl_ClientId.Location = new System.Drawing.Point(139, 240);
             this.lbl_ClientId.Name = "lbl_ClientId";
             this.lbl_ClientId.Size = new System.Drawing.Size(106, 23);
             this.lbl_ClientId.TabIndex = 48;
@@ -168,7 +170,7 @@
             // 
             this.lblClientId.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblClientId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblClientId.Location = new System.Drawing.Point(230, 245);
+            this.lblClientId.Location = new System.Drawing.Point(263, 244);
             this.lblClientId.Name = "lblClientId";
             this.lblClientId.Size = new System.Drawing.Size(106, 23);
             this.lblClientId.TabIndex = 49;
@@ -178,7 +180,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(363, 135);
+            this.label4.Location = new System.Drawing.Point(24, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 23);
             this.label4.TabIndex = 51;
@@ -199,7 +201,7 @@
             // 
             this.lblCreatedDate.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblCreatedDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCreatedDate.Location = new System.Drawing.Point(496, 135);
+            this.lblCreatedDate.Location = new System.Drawing.Point(174, 179);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(127, 23);
             this.lblCreatedDate.TabIndex = 52;
@@ -209,27 +211,46 @@
             // 
             this.cbCurrency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCurrency.FormattingEnabled = true;
-            this.cbCurrency.Location = new System.Drawing.Point(310, 190);
+            this.cbCurrency.Location = new System.Drawing.Point(463, 181);
             this.cbCurrency.Name = "cbCurrency";
-            this.cbCurrency.Size = new System.Drawing.Size(175, 21);
+            this.cbCurrency.Size = new System.Drawing.Size(172, 21);
             this.cbCurrency.TabIndex = 54;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(170, 191);
+            this.label1.Location = new System.Drawing.Point(323, 181);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.Size = new System.Drawing.Size(112, 23);
             this.label1.TabIndex = 53;
             this.label1.Text = "Currency";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(24, 129);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 23);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Password";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(157, 129);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(124, 20);
+            this.txtPassword.TabIndex = 56;
             // 
             // ctrlDetailedAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cbCurrency);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCreatedDate);
@@ -247,11 +268,12 @@
             this.Controls.Add(this.lbl_AccountName);
             this.Controls.Add(this.lbl_AccountId);
             this.Controls.Add(this.lblId);
-            this.MaximumSize = new System.Drawing.Size(643, 570);
+            this.MaximumSize = new System.Drawing.Size(680, 570);
             this.MinimumSize = new System.Drawing.Size(643, 342);
             this.Name = "ctrlDetailedAccounts";
-            this.Size = new System.Drawing.Size(643, 342);
+            this.Size = new System.Drawing.Size(660, 342);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -311,5 +333,7 @@
         private System.Windows.Forms.ComboBox cbClients;
         private System.Windows.Forms.ComboBox cbCurrency;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }
